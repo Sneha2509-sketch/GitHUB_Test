@@ -6,4 +6,4 @@ shared resource = let
   #"Remove Columns" = Table.RemoveColumns(#"From Value", Table.ColumnsOfType(#"From Value", {type table, type record, type list, type nullable binary, type binary, type function}))
 in
   #"Remove Columns";
-shared DBName = "gbs-trutesta-sandbox" meta [IsParameterQuery = true, IsParameterQueryRequired = false, Type = type text, List = {"gbs-trutesta-sandbox", "gbs-trutesta-production"}, DefaultValue = "gbs-trutesta-sandbox"];
+shared DBName = "gbs-trutesta-production" meta [IsParameterQuery = true, IsParameterQueryRequired = false, Type = type text, List = {"gbs-trutesta-sandbox", "gbs-trutesta-production"}, DefaultValue = "gbs-trutesta-sandbox"];
