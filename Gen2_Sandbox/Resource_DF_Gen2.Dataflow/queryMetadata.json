@@ -16,6 +16,10 @@
       "queryId": "7859e876-d96a-48aa-8d74-ecc69bf70f40",
       "queryName": "DBName",
       "loadEnabled": false
+    },
+    "Organization": {
+      "queryId": "54b79ce1-3009-492b-b393-ff60b8bb0bdb",
+      "queryName": "Organization"
     }
   },
   "connections": [
