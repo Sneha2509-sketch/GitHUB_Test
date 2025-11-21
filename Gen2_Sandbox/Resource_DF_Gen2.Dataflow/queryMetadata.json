@@ -6,7 +6,7 @@
   "name": "",
   "queryGroups": [],
   "documentLocale": "en-US",
-  "gatewayObjectId": "26210d0e-82be-4ddb-b328-c538c8e6bd89",
+  "gatewayObjectId": "891e1d14-f031-4100-8979-91e6e003c5f3",
   "queriesMetadata": {
     "resource": {
       "queryId": "e111611f-1a47-4544-9be5-bff3b2487571",
@@ -32,11 +32,6 @@
       "path": "localhost;gbs-trutesta-sandbox",
       "kind": "PostgreSQL",
       "connectionId": "{\"ClusterId\":\"891e1d14-f031-4100-8979-91e6e003c5f3\",\"DatasourceId\":\"c15722a0-5385-4163-9253-41d246b402c1\"}"
-    },
-    {
-      "path": "localhost;gbs-trutesta-production",
-      "kind": "PostgreSQL",
-      "connectionId": "{\"ClusterId\":\"26210d0e-82be-4ddb-b328-c538c8e6bd89\",\"DatasourceId\":\"42f68065-54c4-4233-b04b-0d7043514734\"}"
     }
   ]
 }
