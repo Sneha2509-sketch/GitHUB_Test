@@ -1,0 +1,95 @@
+table ReportTransfers
+	lineageTag: f4039c2d-f324-4175-8d35-0b3203904d66
+
+	measure 'Transferred Reports' = COUNTROWS(ReportTransfers)
+		formatString: 0
+		lineageTag: ebda8209-9edc-4d8b-ab54-7765ac77ef71
+
+	column region
+		dataType: string
+		lineageTag: f4357fe4-33bc-4fe9-8c34-c05a9cab7370
+		summarizeBy: none
+		sourceColumn: region
+
+		annotation SummarizationSetBy = Automatic
+
+	column selection_year
+		dataType: int64
+		formatString: 0
+		lineageTag: bb714979-1bae-4c18-961a-8cf8eeb20327
+		summarizeBy: sum
+		sourceColumn: selection_year
+
+		annotation SummarizationSetBy = Automatic
+
+	column name_text2
+		dataType: string
+		lineageTag: 77399fbd-d384-4220-9536-66baa7c7f60c
+		summarizeBy: none
+		sourceColumn: name_text2
+
+		annotation SummarizationSetBy = Automatic
+
+	column source_customer_display_name
+		dataType: string
+		lineageTag: 4bbac04a-0de4-4ccf-b44f-db7b38b4bb8c
+		summarizeBy: none
+		sourceColumn: source_customer_display_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column source_customer_code
+		dataType: string
+		lineageTag: 7814d254-4a41-47d3-a888-6a31d04c73fe
+		summarizeBy: none
+		sourceColumn: source_customer_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column destination_customer_display_name
+		dataType: string
+		lineageTag: a58206c6-698f-46b9-85f9-82a629b2f888
+		summarizeBy: none
+		sourceColumn: destination_customer_display_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column destination_customer_code
+		dataType: string
+		lineageTag: 2260b877-59f6-4205-846a-d3562a555993
+		summarizeBy: none
+		sourceColumn: destination_customer_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column date_transferred
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 1e641c75-42cd-4c4e-90e4-471259479832
+		summarizeBy: none
+		sourceColumn: date_transferred
+
+		variation Variation
+			isDefault
+			relationship: 5a32f08b-a69d-49d5-ae3f-e51925e683df
+			defaultHierarchy: LocalDateTable_2ea0290c-20fb-43d9-b8a6-a1cc064f2833.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ReportTransfers = m
+		mode: import
+		source =
+				let
+				    Source = PowerPlatform.Dataflows(null),
+				    Workspaces = Source{[Id="Workspaces"]}[Data],
+				    #"d2047b47-62df-451b-862d-5722b41221ba" = Workspaces{[workspaceId="d2047b47-62df-451b-862d-5722b41221ba"]}[Data],
+				    #"c38ec2a8-0358-4a84-9527-173499d34c32" = #"d2047b47-62df-451b-862d-5722b41221ba"{[dataflowId="c38ec2a8-0358-4a84-9527-173499d34c32"]}[Data],
+				    ReportTransfers_ = #"c38ec2a8-0358-4a84-9527-173499d34c32"{[entity="ReportTransfers",version=""]}[Data],
+				    #"Renamed Columns" = Table.RenameColumns(ReportTransfers_,{{"name_text", "region"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

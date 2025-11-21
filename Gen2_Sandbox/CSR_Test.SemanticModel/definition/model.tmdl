@@ -1,0 +1,25 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-IN
+	dataAccessOptions
+		fastCombine
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["CSR_DBName","CSR_DF_Version","Reports Withdrawn","ReportTransfers"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table CSR_DBName
+ref table CSR_DF_Version
+ref table 'Reports Withdrawn'
+ref table DateTableTemplate_352ccafb-2c0c-42ff-8c19-dc008aab609d
+ref table LocalDateTable_c19ea442-e4ff-4f9e-8534-9a05554ed4bc
+ref table ReportTransfers
+ref table LocalDateTable_2ea0290c-20fb-43d9-b8a6-a1cc064f2833
+
+ref cultureInfo en-US
+
