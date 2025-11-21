@@ -1,0 +1,78 @@
+table 'Reports Withdrawn'
+	lineageTag: b9f17178-0213-4cc0-88fa-d196054b2e79
+
+	measure 'Withdrawn Reports' = COUNTROWS('Reports Withdrawn')
+		formatString: 0
+		lineageTag: d5377098-1091-46a1-aefe-93f93ea2a5d8
+
+	column name_text
+		dataType: string
+		lineageTag: 5d7d0b46-1f48-49ea-a1af-6006915c485f
+		summarizeBy: none
+		sourceColumn: name_text
+
+		annotation SummarizationSetBy = Automatic
+
+	column receive_customer_display_name
+		dataType: string
+		lineageTag: 4a4449d4-8b62-4929-933c-2b755bdb7123
+		summarizeBy: none
+		sourceColumn: receive_customer_display_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column receive_customer_display_name2
+		dataType: string
+		lineageTag: d1637859-9d43-4f6e-bbc3-a6a1e49f4a7e
+		summarizeBy: none
+		sourceColumn: receive_customer_display_name2
+
+		annotation SummarizationSetBy = Automatic
+
+	column date_withdrawn
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: d161c8fa-4a39-4382-b6bb-93799470f0dd
+		summarizeBy: none
+		sourceColumn: date_withdrawn
+
+		variation Variation
+			isDefault
+			relationship: f3f58571-1224-4aaa-a9ba-bf6f337cf6cf
+			defaultHierarchy: LocalDateTable_c19ea442-e4ff-4f9e-8534-9a05554ed4bc.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column selection_year
+		dataType: int64
+		formatString: 0
+		lineageTag: 8105a2c2-3721-4dd1-936e-5004b2d2794e
+		summarizeBy: sum
+		sourceColumn: selection_year
+
+		annotation SummarizationSetBy = Automatic
+
+	column region
+		dataType: string
+		lineageTag: 71d99655-dea3-4b3c-9319-318ed9c08db5
+		summarizeBy: none
+		sourceColumn: region
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Reports Withdrawn' = m
+		mode: import
+		source =
+				let
+				    Source = PowerPlatform.Dataflows(null),
+				    Workspaces = Source{[Id="Workspaces"]}[Data],
+				    #"d2047b47-62df-451b-862d-5722b41221ba" = Workspaces{[workspaceId="d2047b47-62df-451b-862d-5722b41221ba"]}[Data],
+				    #"c38ec2a8-0358-4a84-9527-173499d34c32" = #"d2047b47-62df-451b-862d-5722b41221ba"{[dataflowId="c38ec2a8-0358-4a84-9527-173499d34c32"]}[Data],
+				    #"Reports Withdrawn_" = #"c38ec2a8-0358-4a84-9527-173499d34c32"{[entity="Reports Withdrawn",version=""]}[Data]
+				in
+				    #"Reports Withdrawn_"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,27 @@
+table CSR_DF_Version
+	lineageTag: 030ed286-a9ab-44e2-b278-d9ac2874b33f
+
+	column 'DF Version'
+		dataType: string
+		lineageTag: c9156797-7b67-4ce0-b036-379c6ddcd134
+		summarizeBy: none
+		sourceColumn: DF Version
+
+		annotation SummarizationSetBy = Automatic
+
+	partition CSR_DF_Version = m
+		mode: import
+		source =
+				let
+				    Source = PowerPlatform.Dataflows(null),
+				    Workspaces = Source{[Id="Workspaces"]}[Data],
+				    #"d2047b47-62df-451b-862d-5722b41221ba" = Workspaces{[workspaceId="d2047b47-62df-451b-862d-5722b41221ba"]}[Data],
+				    #"c38ec2a8-0358-4a84-9527-173499d34c32" = #"d2047b47-62df-451b-862d-5722b41221ba"{[dataflowId="c38ec2a8-0358-4a84-9527-173499d34c32"]}[Data],
+				    CSR_DF_Version_ = #"c38ec2a8-0358-4a84-9527-173499d34c32"{[entity="CSR_DF_Version",version=""]}[Data]
+				in
+				    CSR_DF_Version_
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

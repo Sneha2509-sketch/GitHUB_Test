@@ -1,0 +1,27 @@
+table CSR_DBName
+	lineageTag: 1bce43f7-e4b6-4edf-b890-585ef2c03b66
+
+	column DBName
+		dataType: string
+		lineageTag: 6ce918d3-d79b-475a-a879-95c943089dac
+		summarizeBy: none
+		sourceColumn: DBName
+
+		annotation SummarizationSetBy = Automatic
+
+	partition CSR_DBName = m
+		mode: import
+		source =
+				let
+				    Source = PowerPlatform.Dataflows(null),
+				    Workspaces = Source{[Id="Workspaces"]}[Data],
+				    #"d2047b47-62df-451b-862d-5722b41221ba" = Workspaces{[workspaceId="d2047b47-62df-451b-862d-5722b41221ba"]}[Data],
+				    #"c38ec2a8-0358-4a84-9527-173499d34c32" = #"d2047b47-62df-451b-862d-5722b41221ba"{[dataflowId="c38ec2a8-0358-4a84-9527-173499d34c32"]}[Data],
+				    CSR_DBName_ = #"c38ec2a8-0358-4a84-9527-173499d34c32"{[entity="CSR_DBName",version=""]}[Data]
+				in
+				    CSR_DBName_
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

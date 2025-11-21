@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Dataflow",
+    "displayName": "Component Selections Reconciliation_DF"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "99d34c32-1734-9527-4a84-0358c38ec2a8"
+  }
+}
