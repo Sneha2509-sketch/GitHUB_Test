@@ -1,0 +1,3878 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "CSR_DB_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CSR_DBName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CSR DB name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CSR_DBName": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "DB": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "CSR DB": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "csr db nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "csr db title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "csr db label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "csr db tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "CSR_DB_name.DB_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CSR_DBName",
+			          "ConceptualProperty": "DBName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "DB name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "name": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "DBName": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "DB": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "db nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "db title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "db label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "db tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "CSR_DF_version": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CSR_DF_Version"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "CSR DF version": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CSR_DF_Version": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "version": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "csr df variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "csr df form": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "csr df type": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "csr df kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "csr df sort": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "csr df style": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "csr df description": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "form": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "type": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "CSR_DF_version.DF_version": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CSR_DF_Version",
+			          "ConceptualProperty": "DF Version"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "DF version": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "version": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "df variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "df form": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "df type": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "df kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "df sort": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "df style": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "form": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "type": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "report_withdrawn": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Reports Withdrawn"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "report withdrawn": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "information withdrawn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "commentary withdrawn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "description withdrawn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "presentation withdrawn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "statement withdrawn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "forecast withdrawn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "account withdrawn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "article withdrawn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "narrative withdrawn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "paper withdrawn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "report_withdrawn.name_text": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Reports Withdrawn",
+			          "ConceptualProperty": "name_text"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "name text": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "name_text": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "text": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "nickname text": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "title text": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "label text": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "tag text": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "name manuscript": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "name transcript": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "name typescript": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "name edition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "name version": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "manuscript": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "report_withdrawn.receive_customer_display_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Reports Withdrawn",
+			          "ConceptualProperty": "receive_customer_display_name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "receive customer display name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "receive_customer_display_name": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "receive client display name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "receive consumer display name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "receive user display name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "receive buyer display name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "receive patron display name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "receive purchaser display name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "receive shopper display name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.771
+			          }
+			        },
+			        {
+			          "receive customer display nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "receive customer display title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "receive customer display label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        }
+			      ]
+			    },
+			    "report_withdrawn.receive_customer_display_name_2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Reports Withdrawn",
+			          "ConceptualProperty": "receive_customer_display_name2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "receive customer display name 2": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "receive_customer_display_name2": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "receive client display name 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "receive consumer display name 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "receive user display name 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "receive buyer display name 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "receive patron display name 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "receive purchaser display name 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "receive shopper display name 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "receive customer display nickname 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "receive customer display title 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "receive customer display label 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        }
+			      ]
+			    },
+			    "report_withdrawn.date_withdrawn": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Reports Withdrawn",
+			          "ConceptualProperty": "date_withdrawn"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date withdrawn": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date_withdrawn": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "moment withdrawn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "period withdrawn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "report_withdrawn.date_withdrawn.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Reports Withdrawn",
+			          "VariationSource": "date_withdrawn",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date hierarchy withdrawn": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "report_withdrawn.date_withdrawn.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Reports Withdrawn",
+			          "VariationSource": "date_withdrawn",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year withdrawn": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date withdrawn year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date withdrawn yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "yr withdrawn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment withdrawn year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "period withdrawn year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "report_withdrawn.date_withdrawn.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Reports Withdrawn",
+			          "VariationSource": "date_withdrawn",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quarter withdrawn": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date withdrawn quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date withdrawn qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "qtr withdrawn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "moment withdrawn quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "period withdrawn quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "report_withdrawn.date_withdrawn.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Reports Withdrawn",
+			          "VariationSource": "date_withdrawn",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month withdrawn": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date withdrawn month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date withdrawn mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "mth withdrawn": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment withdrawn month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "period withdrawn month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "report_withdrawn.date_withdrawn.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Reports Withdrawn",
+			          "VariationSource": "date_withdrawn",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day withdrawn": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date withdrawn day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment withdrawn day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "period withdrawn day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "report_withdrawn.selection_year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Reports Withdrawn",
+			          "ConceptualProperty": "selection_year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "selection year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "selection_year": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "selection yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "report_withdrawn.region": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Reports Withdrawn",
+			          "ConceptualProperty": "region"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "region": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "province": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "area": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "district": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "zone": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "continent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "report_withdrawn.withdrawn_reports": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Reports Withdrawn",
+			          "ConceptualProperty": "Withdrawn Reports"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "withdrawn reports": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "reports": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "withdrawn intelligence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "intelligence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "withdrawn gossip": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "withdrawn rumor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "withdrawn hearsay": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "gossip": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "rumor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "hearsay": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "withdrawn tales": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "withdrawn statement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "report_transfer": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ReportTransfers"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "report transfer": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ReportTransfers": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "transfer": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "information transfer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "commentary transfer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "description transfer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "presentation transfer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statement transfer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "forecast transfer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "account transfer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "article transfer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "narrative transfer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "paper transfer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "report_transfer.name_text": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ReportTransfers",
+			          "ConceptualProperty": "region"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "name text": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "name_text": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "text": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "nickname text": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "title text": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "label text": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "tag text": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "name manuscript": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "name transcript": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "name typescript": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "name edition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "name version": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "manuscript": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "report_transfer.selection_year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ReportTransfers",
+			          "ConceptualProperty": "selection_year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "selection year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "selection_year": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "selection yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "report_transfer.name_text_2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ReportTransfers",
+			          "ConceptualProperty": "name_text2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "name text 2": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "name_text2": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "text 2": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "nickname text 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "title text 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "label text 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "tag text 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "report_transfer.source_customer_display_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ReportTransfers",
+			          "ConceptualProperty": "source_customer_display_name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "source customer display name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "source_customer_display_name": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "customer display": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "source customer display": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "display name": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "customer display name": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "source customer display nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "source customer display title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "source customer display label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "source customer display tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "customer display nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "customer display title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "customer display label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "customer display tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "display nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "display title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "Source Customer Name": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "report_transfer.source_customer_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ReportTransfers",
+			          "ConceptualProperty": "source_customer_code"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "source customer code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "source_customer_code": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "customer code": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "source customer id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "customer id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "source customer key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "customer key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "source client code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "source consumer code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "source user code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "source buyer code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "source patron code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "source purchaser code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        }
+			      ]
+			    },
+			    "report_transfer.destination_customer_display_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ReportTransfers",
+			          "ConceptualProperty": "destination_customer_display_name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "destination customer display name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "destination_customer_display_name": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "customer display": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "destination customer display": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "display name": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "customer display name": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "destination customer display nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "destination customer display title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "destination customer display label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "destination customer display tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.748
+			          }
+			        },
+			        {
+			          "customer display nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "customer display title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "customer display label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "customer display tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "display nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "display title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "Destination Customer Name": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "report_transfer.destination_customer_code": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ReportTransfers",
+			          "ConceptualProperty": "destination_customer_code"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "destination customer code": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "destination_customer_code": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "customer code": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "destination customer id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "customer id": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "destination customer key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "customer key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "destination client code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "destination consumer code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "destination user code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "destination buyer code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "destination patron code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "destination purchaser code": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        }
+			      ]
+			    },
+			    "report_transfer.date_transferred": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ReportTransfers",
+			          "ConceptualProperty": "date_transferred"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date transferred": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date_transferred": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "moment transferred": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "period transferred": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "report_transfer.date_transferred.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ReportTransfers",
+			          "VariationSource": "date_transferred",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date hierarchy transferred": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "report_transfer.date_transferred.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ReportTransfers",
+			          "VariationSource": "date_transferred",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year transferred": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date transferred year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date transferred yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "yr transferred": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment transferred year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "period transferred year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "report_transfer.date_transferred.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ReportTransfers",
+			          "VariationSource": "date_transferred",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quarter transferred": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date transferred quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date transferred qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "qtr transferred": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "moment transferred quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "period transferred quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "report_transfer.date_transferred.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ReportTransfers",
+			          "VariationSource": "date_transferred",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month transferred": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date transferred month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date transferred mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "mth transferred": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment transferred month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "period transferred month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "report_transfer.date_transferred.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ReportTransfers",
+			          "VariationSource": "date_transferred",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day transferred": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date transferred day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment transferred day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "period transferred day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "reporttransfers.transferred_report_count": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ReportTransfers",
+			          "ConceptualProperty": "Transferred Report Count"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Transferred Reports": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "CSR_DB_name_is_named_DB_name": {
+			      "Binding": {
+			        "ConceptualEntity": "CSR_DBName"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CSR_DB_name": {
+			          "Target": {
+			            "Entity": "CSR_DB_name"
+			          }
+			        },
+			        "CSR_DB_name.DB_name": {
+			          "Target": {
+			            "Entity": "CSR_DB_name.DB_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "CSR_DB_name"
+			            },
+			            "Name": {
+			              "Role": "CSR_DB_name.DB_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "DB_names_are_names_IDs_of_CSR_DB_names"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CSR_DB_name"
+			            },
+			            "Object": {
+			              "Role": "CSR_DB_name.DB_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CSR_DB_names_have_DB_names"
+			        }
+			      ]
+			    },
+			    "report_withdrawn_is_withdrawn_on_date_withdrawn": {
+			      "Binding": {
+			        "ConceptualEntity": "Reports Withdrawn"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_withdrawn": {
+			          "Target": {
+			            "Entity": "report_withdrawn"
+			          }
+			        },
+			        "report_withdrawn.date_withdrawn": {
+			          "Target": {
+			            "Entity": "report_withdrawn.date_withdrawn"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "When": {
+			          "Role": "report_withdrawn.date_withdrawn"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Verbs": [
+			              {
+			                "withdraw": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "report_withdrawn"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.9,
+			          "ID": "report_withdrawn_are_withdrawn_on_date_withdrawn"
+			        }
+			      ]
+			    },
+			    "report_transfer_is_transferred_on_date_transferred": {
+			      "Binding": {
+			        "ConceptualEntity": "ReportTransfers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_transfer": {
+			          "Target": {
+			            "Entity": "report_transfer"
+			          }
+			        },
+			        "report_transfer.date_transferred": {
+			          "Target": {
+			            "Entity": "report_transfer.date_transferred"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "When": {
+			          "Role": "report_transfer.date_transferred"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Verbs": [
+			              {
+			                "transfer": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "report_transfer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.9,
+			          "ID": "report_transfers_are_transferred_on_date_transferred"
+			        }
+			      ]
+			    },
+			    "report_withdrawn_in_region": {
+			      "Binding": {
+			        "ConceptualEntity": "Reports Withdrawn"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_withdrawn": {
+			          "Target": {
+			            "Entity": "report_withdrawn"
+			          }
+			        },
+			        "report_withdrawn.region": {
+			          "Target": {
+			            "Entity": "report_withdrawn.region"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "report_withdrawn.region"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "report_withdrawn"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "report_withdrawn.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_withdrawn_are_in_regions"
+			        }
+			      ]
+			    },
+			    "CSR_DF_version_has_DF_version": {
+			      "Binding": {
+			        "ConceptualEntity": "CSR_DF_Version"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CSR_DF_version": {
+			          "Target": {
+			            "Entity": "CSR_DF_version"
+			          }
+			        },
+			        "CSR_DF_version.DF_version": {
+			          "Target": {
+			            "Entity": "CSR_DF_version.DF_version"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CSR_DF_version"
+			            },
+			            "Object": {
+			              "Role": "CSR_DF_version.DF_version"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CSR_DF_versions_have_DF_versions"
+			        }
+			      ]
+			    },
+			    "report_withdrawn_has_name_text": {
+			      "Binding": {
+			        "ConceptualEntity": "Reports Withdrawn"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_withdrawn": {
+			          "Target": {
+			            "Entity": "report_withdrawn"
+			          }
+			        },
+			        "report_withdrawn.name_text": {
+			          "Target": {
+			            "Entity": "report_withdrawn.name_text"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_withdrawn"
+			            },
+			            "Object": {
+			              "Role": "report_withdrawn.name_text"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_withdrawn_have_name_texts"
+			        }
+			      ]
+			    },
+			    "report_withdrawn_has_receive_customer_display_name": {
+			      "Binding": {
+			        "ConceptualEntity": "Reports Withdrawn"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_withdrawn": {
+			          "Target": {
+			            "Entity": "report_withdrawn"
+			          }
+			        },
+			        "report_withdrawn.receive_customer_display_name": {
+			          "Target": {
+			            "Entity": "report_withdrawn.receive_customer_display_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_withdrawn"
+			            },
+			            "Object": {
+			              "Role": "report_withdrawn.receive_customer_display_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_withdrawn_have_receive_customer_display_name"
+			        }
+			      ]
+			    },
+			    "report_withdrawn_has_receive_customer_display_name_2": {
+			      "Binding": {
+			        "ConceptualEntity": "Reports Withdrawn"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_withdrawn": {
+			          "Target": {
+			            "Entity": "report_withdrawn"
+			          }
+			        },
+			        "report_withdrawn.receive_customer_display_name_2": {
+			          "Target": {
+			            "Entity": "report_withdrawn.receive_customer_display_name_2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_withdrawn"
+			            },
+			            "Object": {
+			              "Role": "report_withdrawn.receive_customer_display_name_2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_withdrawn_have_receive_customer_display_name_2"
+			        }
+			      ]
+			    },
+			    "report_withdrawn_has_date_withdrawn": {
+			      "Binding": {
+			        "ConceptualEntity": "Reports Withdrawn"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_withdrawn": {
+			          "Target": {
+			            "Entity": "report_withdrawn"
+			          }
+			        },
+			        "report_withdrawn.date_withdrawn": {
+			          "Target": {
+			            "Entity": "report_withdrawn.date_withdrawn"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_withdrawn"
+			            },
+			            "Object": {
+			              "Role": "report_withdrawn.date_withdrawn"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_withdrawn_have_date_withdrawn"
+			        }
+			      ]
+			    },
+			    "report_withdrawn_has_selection_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Reports Withdrawn"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_withdrawn": {
+			          "Target": {
+			            "Entity": "report_withdrawn"
+			          }
+			        },
+			        "report_withdrawn.selection_year": {
+			          "Target": {
+			            "Entity": "report_withdrawn.selection_year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_withdrawn"
+			            },
+			            "Object": {
+			              "Role": "report_withdrawn.selection_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_withdrawn_have_selection_years"
+			        }
+			      ]
+			    },
+			    "report_withdrawn_has_region": {
+			      "Binding": {
+			        "ConceptualEntity": "Reports Withdrawn"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_withdrawn": {
+			          "Target": {
+			            "Entity": "report_withdrawn"
+			          }
+			        },
+			        "report_withdrawn.region": {
+			          "Target": {
+			            "Entity": "report_withdrawn.region"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_withdrawn"
+			            },
+			            "Object": {
+			              "Role": "report_withdrawn.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_withdrawn_have_regions"
+			        }
+			      ]
+			    },
+			    "report_withdrawn_has_withdrawn_reports": {
+			      "Binding": {
+			        "ConceptualEntity": "Reports Withdrawn"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_withdrawn": {
+			          "Target": {
+			            "Entity": "report_withdrawn"
+			          }
+			        },
+			        "report_withdrawn.withdrawn_reports": {
+			          "Target": {
+			            "Entity": "report_withdrawn.withdrawn_reports"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_withdrawn"
+			            },
+			            "Object": {
+			              "Role": "report_withdrawn.withdrawn_reports"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_withdrawn_have_withdrawn_reports"
+			        }
+			      ]
+			    },
+			    "report_transfer_has_name_text": {
+			      "Binding": {
+			        "ConceptualEntity": "ReportTransfers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_transfer": {
+			          "Target": {
+			            "Entity": "report_transfer"
+			          }
+			        },
+			        "report_transfer.name_text": {
+			          "Target": {
+			            "Entity": "report_transfer.name_text"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_transfer"
+			            },
+			            "Object": {
+			              "Role": "report_transfer.name_text"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_transfers_have_name_texts"
+			        }
+			      ]
+			    },
+			    "report_transfer_has_selection_year": {
+			      "Binding": {
+			        "ConceptualEntity": "ReportTransfers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_transfer": {
+			          "Target": {
+			            "Entity": "report_transfer"
+			          }
+			        },
+			        "report_transfer.selection_year": {
+			          "Target": {
+			            "Entity": "report_transfer.selection_year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_transfer"
+			            },
+			            "Object": {
+			              "Role": "report_transfer.selection_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_transfers_have_selection_years"
+			        }
+			      ]
+			    },
+			    "report_transfer_has_name_text_2": {
+			      "Binding": {
+			        "ConceptualEntity": "ReportTransfers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_transfer": {
+			          "Target": {
+			            "Entity": "report_transfer"
+			          }
+			        },
+			        "report_transfer.name_text_2": {
+			          "Target": {
+			            "Entity": "report_transfer.name_text_2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_transfer"
+			            },
+			            "Object": {
+			              "Role": "report_transfer.name_text_2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_transfers_have_name_text_2"
+			        }
+			      ]
+			    },
+			    "report_transfer_has_source_customer_display_name": {
+			      "Binding": {
+			        "ConceptualEntity": "ReportTransfers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_transfer": {
+			          "Target": {
+			            "Entity": "report_transfer"
+			          }
+			        },
+			        "report_transfer.source_customer_display_name": {
+			          "Target": {
+			            "Entity": "report_transfer.source_customer_display_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_transfer"
+			            },
+			            "Object": {
+			              "Role": "report_transfer.source_customer_display_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_transfers_have_source_customer_display_names"
+			        }
+			      ]
+			    },
+			    "report_transfer_has_source_customer_code": {
+			      "Binding": {
+			        "ConceptualEntity": "ReportTransfers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_transfer": {
+			          "Target": {
+			            "Entity": "report_transfer"
+			          }
+			        },
+			        "report_transfer.source_customer_code": {
+			          "Target": {
+			            "Entity": "report_transfer.source_customer_code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_transfer"
+			            },
+			            "Object": {
+			              "Role": "report_transfer.source_customer_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_transfers_have_source_customer_codes"
+			        }
+			      ]
+			    },
+			    "report_transfer_has_destination_customer_display_name": {
+			      "Binding": {
+			        "ConceptualEntity": "ReportTransfers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_transfer": {
+			          "Target": {
+			            "Entity": "report_transfer"
+			          }
+			        },
+			        "report_transfer.destination_customer_display_name": {
+			          "Target": {
+			            "Entity": "report_transfer.destination_customer_display_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_transfer"
+			            },
+			            "Object": {
+			              "Role": "report_transfer.destination_customer_display_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_transfers_have_destination_customer_display_names"
+			        }
+			      ]
+			    },
+			    "report_transfer_has_destination_customer_code": {
+			      "Binding": {
+			        "ConceptualEntity": "ReportTransfers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_transfer": {
+			          "Target": {
+			            "Entity": "report_transfer"
+			          }
+			        },
+			        "report_transfer.destination_customer_code": {
+			          "Target": {
+			            "Entity": "report_transfer.destination_customer_code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_transfer"
+			            },
+			            "Object": {
+			              "Role": "report_transfer.destination_customer_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_transfers_have_destination_customer_codes"
+			        }
+			      ]
+			    },
+			    "report_transfer_has_date_transferred": {
+			      "Binding": {
+			        "ConceptualEntity": "ReportTransfers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_transfer": {
+			          "Target": {
+			            "Entity": "report_transfer"
+			          }
+			        },
+			        "report_transfer.date_transferred": {
+			          "Target": {
+			            "Entity": "report_transfer.date_transferred"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_transfer"
+			            },
+			            "Object": {
+			              "Role": "report_transfer.date_transferred"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_transfers_have_date_transferred"
+			        }
+			      ]
+			    },
+			    "report_withdrawn_date_withdrawn_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Reports Withdrawn"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_withdrawn.date_withdrawn": {
+			          "Target": {
+			            "Entity": "report_withdrawn.date_withdrawn"
+			          }
+			        },
+			        "report_withdrawn.date_withdrawn.date_hierarchy": {
+			          "Target": {
+			            "Entity": "report_withdrawn.date_withdrawn.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_withdrawn.date_withdrawn"
+			            },
+			            "Object": {
+			              "Role": "report_withdrawn.date_withdrawn.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_withdrawn_have_date_hierarchy_withdrawn"
+			        }
+			      ]
+			    },
+			    "report_withdrawn_date_withdrawn_date_hierarchy_has_report_withdrawn_date_withdrawn_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Reports Withdrawn"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_withdrawn.date_withdrawn.date_hierarchy": {
+			          "Target": {
+			            "Entity": "report_withdrawn.date_withdrawn.date_hierarchy"
+			          }
+			        },
+			        "report_withdrawn.date_withdrawn.year": {
+			          "Target": {
+			            "Entity": "report_withdrawn.date_withdrawn.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_withdrawn.date_withdrawn.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "report_withdrawn.date_withdrawn.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_withdrawn_have_year_withdrawn"
+			        }
+			      ]
+			    },
+			    "report_withdrawn_date_withdrawn_date_hierarchy_has_report_withdrawn_date_withdrawn_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Reports Withdrawn"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_withdrawn.date_withdrawn.date_hierarchy": {
+			          "Target": {
+			            "Entity": "report_withdrawn.date_withdrawn.date_hierarchy"
+			          }
+			        },
+			        "report_withdrawn.date_withdrawn.quarter": {
+			          "Target": {
+			            "Entity": "report_withdrawn.date_withdrawn.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_withdrawn.date_withdrawn.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "report_withdrawn.date_withdrawn.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_withdrawn_have_quarter_withdrawn"
+			        }
+			      ]
+			    },
+			    "report_withdrawn_date_withdrawn_date_hierarchy_has_report_withdrawn_date_withdrawn_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Reports Withdrawn"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_withdrawn.date_withdrawn.date_hierarchy": {
+			          "Target": {
+			            "Entity": "report_withdrawn.date_withdrawn.date_hierarchy"
+			          }
+			        },
+			        "report_withdrawn.date_withdrawn.month": {
+			          "Target": {
+			            "Entity": "report_withdrawn.date_withdrawn.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_withdrawn.date_withdrawn.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "report_withdrawn.date_withdrawn.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_withdrawn_have_month_withdrawn"
+			        }
+			      ]
+			    },
+			    "report_withdrawn_date_withdrawn_date_hierarchy_has_report_withdrawn_date_withdrawn_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Reports Withdrawn"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_withdrawn.date_withdrawn.date_hierarchy": {
+			          "Target": {
+			            "Entity": "report_withdrawn.date_withdrawn.date_hierarchy"
+			          }
+			        },
+			        "report_withdrawn.date_withdrawn.day": {
+			          "Target": {
+			            "Entity": "report_withdrawn.date_withdrawn.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_withdrawn.date_withdrawn.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "report_withdrawn.date_withdrawn.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_withdrawn_have_day_withdrawn"
+			        }
+			      ]
+			    },
+			    "report_transfer_date_transferred_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "ReportTransfers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_transfer.date_transferred": {
+			          "Target": {
+			            "Entity": "report_transfer.date_transferred"
+			          }
+			        },
+			        "report_transfer.date_transferred.date_hierarchy": {
+			          "Target": {
+			            "Entity": "report_transfer.date_transferred.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_transfer.date_transferred"
+			            },
+			            "Object": {
+			              "Role": "report_transfer.date_transferred.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_transferred_have_date_hierarchy_transferred"
+			        }
+			      ]
+			    },
+			    "report_transfer_date_transferred_date_hierarchy_has_report_transfer_date_transferred_year": {
+			      "Binding": {
+			        "ConceptualEntity": "ReportTransfers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_transfer.date_transferred.date_hierarchy": {
+			          "Target": {
+			            "Entity": "report_transfer.date_transferred.date_hierarchy"
+			          }
+			        },
+			        "report_transfer.date_transferred.year": {
+			          "Target": {
+			            "Entity": "report_transfer.date_transferred.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_transfer.date_transferred.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "report_transfer.date_transferred.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_transferred_have_year_transferred"
+			        }
+			      ]
+			    },
+			    "report_transfer_date_transferred_date_hierarchy_has_report_transfer_date_transferred_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "ReportTransfers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_transfer.date_transferred.date_hierarchy": {
+			          "Target": {
+			            "Entity": "report_transfer.date_transferred.date_hierarchy"
+			          }
+			        },
+			        "report_transfer.date_transferred.quarter": {
+			          "Target": {
+			            "Entity": "report_transfer.date_transferred.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_transfer.date_transferred.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "report_transfer.date_transferred.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_transferred_have_quarter_transferred"
+			        }
+			      ]
+			    },
+			    "report_transfer_date_transferred_date_hierarchy_has_report_transfer_date_transferred_month": {
+			      "Binding": {
+			        "ConceptualEntity": "ReportTransfers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_transfer.date_transferred.date_hierarchy": {
+			          "Target": {
+			            "Entity": "report_transfer.date_transferred.date_hierarchy"
+			          }
+			        },
+			        "report_transfer.date_transferred.month": {
+			          "Target": {
+			            "Entity": "report_transfer.date_transferred.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_transfer.date_transferred.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "report_transfer.date_transferred.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_transferred_have_month_transferred"
+			        }
+			      ]
+			    },
+			    "report_transfer_date_transferred_date_hierarchy_has_report_transfer_date_transferred_day": {
+			      "Binding": {
+			        "ConceptualEntity": "ReportTransfers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_transfer.date_transferred.date_hierarchy": {
+			          "Target": {
+			            "Entity": "report_transfer.date_transferred.date_hierarchy"
+			          }
+			        },
+			        "report_transfer.date_transferred.day": {
+			          "Target": {
+			            "Entity": "report_transfer.date_transferred.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_transfer.date_transferred.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "report_transfer.date_transferred.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchy_transferred_have_day_transferred"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

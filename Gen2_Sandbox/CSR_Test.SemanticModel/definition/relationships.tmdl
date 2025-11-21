@@ -1,0 +1,10 @@
+relationship f3f58571-1224-4aaa-a9ba-bf6f337cf6cf
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Reports Withdrawn'.date_withdrawn
+	toColumn: LocalDateTable_c19ea442-e4ff-4f9e-8534-9a05554ed4bc.Date
+
+relationship 5a32f08b-a69d-49d5-ae3f-e51925e683df
+	joinOnDateBehavior: datePartOnly
+	fromColumn: ReportTransfers.date_transferred
+	toColumn: LocalDateTable_2ea0290c-20fb-43d9-b8a6-a1cc064f2833.Date
+

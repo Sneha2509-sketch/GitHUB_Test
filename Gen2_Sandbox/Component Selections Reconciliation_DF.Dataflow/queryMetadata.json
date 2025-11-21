@@ -31,10 +31,6 @@
     "CSR_DBName": {
       "queryId": "ed2af0f1-d39b-48bb-8c83-3b18e10c83ee",
       "queryName": "CSR_DBName"
-    },
-    "CSR_DF_LastUpdated": {
-      "queryId": "7947e359-1069-4edf-9f39-d7c59acb2828",
-      "queryName": "CSR_DF_LastUpdated"
     }
   },
   "connections": [

@@ -26,9 +26,3 @@ shared CSR_DBName = let
   #"Replace errors" = Table.ReplaceErrorValues(#"Transform columns", {{"DBName", null}})
 in
   #"Replace errors";
-shared CSR_DF_LastUpdated = let
-    Source = DateTimeZone.UtcNow(),
-    #"Convert to table" = Table.FromValue(Source),
-    #"Renamed columns" = Table.RenameColumns(#"Convert to table", {{"Value", "Updated Time in UTC"}})
-in
-    #"Renamed columns";
