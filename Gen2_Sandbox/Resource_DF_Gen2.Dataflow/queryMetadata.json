@@ -1,0 +1,37 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowFastCopy": false
+  },
+  "name": "",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "gatewayObjectId": "891e1d14-f031-4100-8979-91e6e003c5f3",
+  "queriesMetadata": {
+    "resource": {
+      "queryId": "e111611f-1a47-4544-9be5-bff3b2487571",
+      "queryName": "resource"
+    },
+    "DBName": {
+      "queryId": "7859e876-d96a-48aa-8d74-ecc69bf70f40",
+      "queryName": "DBName",
+      "loadEnabled": false
+    },
+    "Organization": {
+      "queryId": "54b79ce1-3009-492b-b393-ff60b8bb0bdb",
+      "queryName": "Organization"
+    }
+  },
+  "connections": [
+    {
+      "path": "Warehouse",
+      "kind": "Warehouse",
+      "connectionId": "681a8637-86fd-4b2f-945b-c9c3d51a215b"
+    },
+    {
+      "path": "localhost;gbs-trutesta-sandbox",
+      "kind": "PostgreSQL",
+      "connectionId": "{\"ClusterId\":\"891e1d14-f031-4100-8979-91e6e003c5f3\",\"DatasourceId\":\"c15722a0-5385-4163-9253-41d246b402c1\"}"
+    }
+  ]
+}
