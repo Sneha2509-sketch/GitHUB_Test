@@ -8,3 +8,9 @@ relationship 5a32f08b-a69d-49d5-ae3f-e51925e683df
 	fromColumn: ReportTransfers.date_transferred
 	toColumn: LocalDateTable_2ea0290c-20fb-43d9-b8a6-a1cc064f2833.Date
 
+relationship AutoDetected_b2528e24-c1b3-44de-8bf1-78b6e96e0d2a
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Workspace_UUID.Workspace
+	toColumn: Dataflow_UUID.Workspace
+
