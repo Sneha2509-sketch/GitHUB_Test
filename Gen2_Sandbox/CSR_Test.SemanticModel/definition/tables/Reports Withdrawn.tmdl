@@ -66,8 +66,8 @@ table 'Reports Withdrawn'
 				let
 				    Source = PowerPlatform.Dataflows(null),
 				    Workspaces = Source{[Id="Workspaces"]}[Data],
-				    #"d2047b47-62df-451b-862d-5722b41221ba" = Workspaces{[workspaceId="d2047b47-62df-451b-862d-5722b41221ba"]}[Data],
-				    #"c38ec2a8-0358-4a84-9527-173499d34c32" = #"d2047b47-62df-451b-862d-5722b41221ba"{[dataflowId="c38ec2a8-0358-4a84-9527-173499d34c32"]}[Data],
+				    #"d2047b47-62df-451b-862d-5722b41221ba" = Workspaces{[workspaceId=getWorkspaceUUID()]}[Data],
+				    #"c38ec2a8-0358-4a84-9527-173499d34c32" = #"d2047b47-62df-451b-862d-5722b41221ba"{[dataflowId=getDataflowUUID("Component Selections Reconciliation_DF")]}[Data],
 				    #"Reports Withdrawn_" = #"c38ec2a8-0358-4a84-9527-173499d34c32"{[entity="Reports Withdrawn",version=""]}[Data]
 				in
 				    #"Reports Withdrawn_"

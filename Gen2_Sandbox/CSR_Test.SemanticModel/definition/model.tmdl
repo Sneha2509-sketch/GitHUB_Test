@@ -9,7 +9,7 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["CSR_DBName","CSR_DF_Version","Reports Withdrawn","ReportTransfers"]
+annotation PBI_QueryOrder = ["CSR_DBName","CSR_DF_Version","Reports Withdrawn","ReportTransfers","environment","workspace","Dataflow_UUID","Workspace_UUID","getDataflowUUID","getWorkspaceUUID"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -20,6 +20,8 @@ ref table DateTableTemplate_352ccafb-2c0c-42ff-8c19-dc008aab609d
 ref table LocalDateTable_c19ea442-e4ff-4f9e-8534-9a05554ed4bc
 ref table ReportTransfers
 ref table LocalDateTable_2ea0290c-20fb-43d9-b8a6-a1cc064f2833
+ref table Dataflow_UUID
+ref table Workspace_UUID
 
 ref cultureInfo en-US
 

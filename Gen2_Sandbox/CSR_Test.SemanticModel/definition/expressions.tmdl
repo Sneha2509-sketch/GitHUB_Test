@@ -1,0 +1,48 @@
+expression environment = "SemaTree" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: e706816f-0b72-4a3c-a50f-8e121c5fa223
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
+expression workspace = "Gen2 Sandbox" meta [IsParameterQuery=true, List={"Gen2 Sandbox", "Gen2 Production"}, DefaultValue="Gen2 Sandbox", Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 26bde7a9-453e-40b3-8174-5148b63f857d
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
+expression getDataflowUUID =
+		(dataflow as text) as text =>
+		let
+		    Source = Dataflow_UUID,
+		    _workspace = Text.Trim(workspace),
+		    _environment = Text.Trim(environment),
+		    _dataflow=Text.Trim(dataflow),
+		    Filtered_Rows = Table.SelectRows(Source, each ( ([Environment] = environment) and ([Workspace] = workspace) and ([Dataflow] = dataflow))),
+		    SingleRow = if Table.RowCount(Filtered_Rows) = 1 then Filtered_Rows else null
+		in
+		    Text.From(SingleRow{0}[UUID])
+	lineageTag: d439ce09-ac84-4fb8-818e-0fc3ff065bfb
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Function
+
+expression getWorkspaceUUID = ```
+		() as text => 
+		let
+		    Source = Workspace_UUID,
+		    _workspace = Text.Trim(workspace),
+		    _environment = Text.Trim(environment),
+		    Filtered_Rows = Table.SelectRows(Source, each ( ([Environment]=environment) and ([Workspace] = workspace))),
+		    SingleRow = if Table.RowCount(Filtered_Rows) = 1 then Filtered_Rows else null
+		in
+		    SingleRow{0}[UUID]
+		```
+	lineageTag: 7ce5e6df-a48b-4c64-bd38-37958f0617cc
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Function
+
