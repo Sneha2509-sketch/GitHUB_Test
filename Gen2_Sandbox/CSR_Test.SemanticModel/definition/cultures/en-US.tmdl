@@ -1636,35 +1636,102 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "report_transfer.name_text": {
+			    "report_transfer.report": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "ReportTransfers",
-			          "ConceptualProperty": "region"
+			          "ConceptualProperty": "Report#"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "name text": {
+			          "report#": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "name_text": {
+			          "report no": {
 			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
 			          }
 			        },
 			        {
-			          "text": {
-			            "State": "Generated",
-			            "Weight": 0.97
+			          "report num": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
 			          }
 			        },
 			        {
-			          "nickname text": {
+			          "report number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "information #": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "commentary #": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "description #": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "presentation #": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "statement #": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "forecast #": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -1674,93 +1741,13 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "title text": {
+			          "account #": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "label text": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "tag text": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.582
-			          }
-			        },
-			        {
-			          "name manuscript": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "name transcript": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "name typescript": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "name edition": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "name version": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.5
-			          }
-			        },
-			        {
-			          "manuscript": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.491
 			          }
 			        }
 			      ]
@@ -1809,7 +1796,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "ReportTransfers",
-			          "ConceptualProperty": "name_text2"
+			          "ConceptualProperty": "Region"
 			        }
 			      },
 			      "State": "Generated",
@@ -1870,6 +1857,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Region": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -2811,18 +2808,1432 @@ cultureInfo en-US
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "reporttransfers.transferred_report_count": {
+			    "report_transfer.transferred_reports": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "ReportTransfers",
-			          "ConceptualProperty": "Transferred Report Count"
+			          "ConceptualProperty": "Transferred Reports"
 			        }
 			      },
-			      "State": "Generated"
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "transferred reports": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "reports": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "transferred intelligence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "intelligence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "transferred gossip": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "transferred rumor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "transferred hearsay": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "gossip": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "rumor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "hearsay": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "transferred tales": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "transferred statement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "dataflow_UUID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dataflow_UUID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dataflow UUID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Dataflow_UUID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "dataflow_UUID.environment": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dataflow_UUID",
+			          "ConceptualProperty": "Environment"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "environment": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "situation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "atmosphere": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "milieu": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "setting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "upbringing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "background": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "dataflow_UUID.workspace": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dataflow_UUID",
+			          "ConceptualProperty": "Workspace"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "workspace": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "workstation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "cubicle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "workplace": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "booth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "desk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "office": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "terminal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "room": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "space": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "dataflow_UUID.dataflow": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dataflow_UUID",
+			          "ConceptualProperty": "Dataflow"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dataflow": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "dataflow_UUID.uuid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dataflow_UUID",
+			          "ConceptualProperty": "UUID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "uuid": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "workspace_UUID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Workspace_UUID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "workspace UUID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Workspace_UUID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "workspace_UUID.environment": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Workspace_UUID",
+			          "ConceptualProperty": "Environment"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "environment": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "situation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "atmosphere": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "milieu": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "setting": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "upbringing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "background": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "workspace_UUID.workspace": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Workspace_UUID",
+			          "ConceptualProperty": "Workspace"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "workspace": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "workstation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "cubicle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "workplace": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "booth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "desk": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "office": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "terminal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "room": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "space": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "workspace_UUID.uuid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Workspace_UUID",
+			          "ConceptualProperty": "UUID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "uuid": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "CSR_DB_name_is_named_DB_name": {
+			    "dataflow_UUID_has_workspace_UUID": {
+			      "Binding": {
+			        "ConceptualEntity": "Dataflow_UUID"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataflow_UUID": {
+			          "Target": {
+			            "Entity": "dataflow_UUID"
+			          }
+			        },
+			        "workspace_UUID": {
+			          "Target": {
+			            "Entity": "workspace_UUID"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataflow_UUID"
+			            },
+			            "Object": {
+			              "Role": "workspace_UUID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataflow_UUIDs_have_workspace_UUIDs"
+			        }
+			      ]
+			    },
+			    "workspace_UUID_has_uuid": {
+			      "Binding": {
+			        "ConceptualEntity": "Workspace_UUID"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "workspace_UUID": {
+			          "Target": {
+			            "Entity": "workspace_UUID"
+			          }
+			        },
+			        "workspace_UUID.uuid": {
+			          "Target": {
+			            "Entity": "workspace_UUID.uuid"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "workspace_UUID"
+			            },
+			            "Object": {
+			              "Role": "workspace_UUID.uuid"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "workspace_UUIDs_have_uuids"
+			        }
+			      ]
+			    },
+			    "workspace_UUID_has_workspace": {
+			      "Binding": {
+			        "ConceptualEntity": "Workspace_UUID"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "workspace_UUID": {
+			          "Target": {
+			            "Entity": "workspace_UUID"
+			          }
+			        },
+			        "workspace_UUID.workspace": {
+			          "Target": {
+			            "Entity": "workspace_UUID.workspace"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "workspace_UUID"
+			            },
+			            "Object": {
+			              "Role": "workspace_UUID.workspace"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "workspace_UUIDs_have_workspaces"
+			        }
+			      ]
+			    },
+			    "workspace_UUID_has_environment": {
+			      "Binding": {
+			        "ConceptualEntity": "Workspace_UUID"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "workspace_UUID": {
+			          "Target": {
+			            "Entity": "workspace_UUID"
+			          }
+			        },
+			        "workspace_UUID.environment": {
+			          "Target": {
+			            "Entity": "workspace_UUID.environment"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "workspace_UUID"
+			            },
+			            "Object": {
+			              "Role": "workspace_UUID.environment"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "workspace_UUIDs_have_environments"
+			        }
+			      ]
+			    },
+			    "dataflow_UUID_has_uuid": {
+			      "Binding": {
+			        "ConceptualEntity": "Dataflow_UUID"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataflow_UUID": {
+			          "Target": {
+			            "Entity": "dataflow_UUID"
+			          }
+			        },
+			        "dataflow_UUID.uuid": {
+			          "Target": {
+			            "Entity": "dataflow_UUID.uuid"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataflow_UUID"
+			            },
+			            "Object": {
+			              "Role": "dataflow_UUID.uuid"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataflow_UUIDs_have_uuids"
+			        }
+			      ]
+			    },
+			    "dataflow_UUID_has_dataflow": {
+			      "Binding": {
+			        "ConceptualEntity": "Dataflow_UUID"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataflow_UUID": {
+			          "Target": {
+			            "Entity": "dataflow_UUID"
+			          }
+			        },
+			        "dataflow_UUID.dataflow": {
+			          "Target": {
+			            "Entity": "dataflow_UUID.dataflow"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataflow_UUID"
+			            },
+			            "Object": {
+			              "Role": "dataflow_UUID.dataflow"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataflow_UUIDs_have_dataflow"
+			        }
+			      ]
+			    },
+			    "dataflow_UUID_has_workspace": {
+			      "Binding": {
+			        "ConceptualEntity": "Dataflow_UUID"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataflow_UUID": {
+			          "Target": {
+			            "Entity": "dataflow_UUID"
+			          }
+			        },
+			        "dataflow_UUID.workspace": {
+			          "Target": {
+			            "Entity": "dataflow_UUID.workspace"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataflow_UUID"
+			            },
+			            "Object": {
+			              "Role": "dataflow_UUID.workspace"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataflow_UUIDs_have_workspaces"
+			        }
+			      ]
+			    },
+			    "dataflow_UUID_has_environment": {
+			      "Binding": {
+			        "ConceptualEntity": "Dataflow_UUID"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dataflow_UUID": {
+			          "Target": {
+			            "Entity": "dataflow_UUID"
+			          }
+			        },
+			        "dataflow_UUID.environment": {
+			          "Target": {
+			            "Entity": "dataflow_UUID.environment"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dataflow_UUID"
+			            },
+			            "Object": {
+			              "Role": "dataflow_UUID.environment"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataflow_UUIDs_have_environments"
+			        }
+			      ]
+			    },
+			    "report_transfer_has_transferred_reports": {
+			      "Binding": {
+			        "ConceptualEntity": "ReportTransfers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_transfer": {
+			          "Target": {
+			            "Entity": "report_transfer"
+			          }
+			        },
+			        "report_transfer.transferred_reports": {
+			          "Target": {
+			            "Entity": "report_transfer.transferred_reports"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_transfer"
+			            },
+			            "Object": {
+			              "Role": "report_transfer.transferred_reports"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_transfers_have_transferred_reports"
+			        }
+			      ]
+			    },
+			    "report_transfer_has_date_transferred": {
+			      "Binding": {
+			        "ConceptualEntity": "ReportTransfers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_transfer": {
+			          "Target": {
+			            "Entity": "report_transfer"
+			          }
+			        },
+			        "report_transfer.date_transferred": {
+			          "Target": {
+			            "Entity": "report_transfer.date_transferred"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_transfer"
+			            },
+			            "Object": {
+			              "Role": "report_transfer.date_transferred"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_transfers_have_date_transferred"
+			        }
+			      ]
+			    },
+			    "report_transfer_has_destination_customer_code": {
+			      "Binding": {
+			        "ConceptualEntity": "ReportTransfers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_transfer": {
+			          "Target": {
+			            "Entity": "report_transfer"
+			          }
+			        },
+			        "report_transfer.destination_customer_code": {
+			          "Target": {
+			            "Entity": "report_transfer.destination_customer_code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_transfer"
+			            },
+			            "Object": {
+			              "Role": "report_transfer.destination_customer_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_transfers_have_destination_customer_codes"
+			        }
+			      ]
+			    },
+			    "report_transfer_has_destination_customer_display_name": {
+			      "Binding": {
+			        "ConceptualEntity": "ReportTransfers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_transfer": {
+			          "Target": {
+			            "Entity": "report_transfer"
+			          }
+			        },
+			        "report_transfer.destination_customer_display_name": {
+			          "Target": {
+			            "Entity": "report_transfer.destination_customer_display_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_transfer"
+			            },
+			            "Object": {
+			              "Role": "report_transfer.destination_customer_display_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_transfers_have_destination_customer_display_names"
+			        }
+			      ]
+			    },
+			    "report_transfer_has_source_customer_code": {
+			      "Binding": {
+			        "ConceptualEntity": "ReportTransfers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_transfer": {
+			          "Target": {
+			            "Entity": "report_transfer"
+			          }
+			        },
+			        "report_transfer.source_customer_code": {
+			          "Target": {
+			            "Entity": "report_transfer.source_customer_code"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_transfer"
+			            },
+			            "Object": {
+			              "Role": "report_transfer.source_customer_code"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_transfers_have_source_customer_codes"
+			        }
+			      ]
+			    },
+			    "report_transfer_has_source_customer_display_name": {
+			      "Binding": {
+			        "ConceptualEntity": "ReportTransfers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_transfer": {
+			          "Target": {
+			            "Entity": "report_transfer"
+			          }
+			        },
+			        "report_transfer.source_customer_display_name": {
+			          "Target": {
+			            "Entity": "report_transfer.source_customer_display_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_transfer"
+			            },
+			            "Object": {
+			              "Role": "report_transfer.source_customer_display_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_transfers_have_source_customer_display_names"
+			        }
+			      ]
+			    },
+			    "report_transfer_has_name_text_2": {
+			      "Binding": {
+			        "ConceptualEntity": "ReportTransfers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_transfer": {
+			          "Target": {
+			            "Entity": "report_transfer"
+			          }
+			        },
+			        "report_transfer.name_text_2": {
+			          "Target": {
+			            "Entity": "report_transfer.name_text_2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_transfer"
+			            },
+			            "Object": {
+			              "Role": "report_transfer.name_text_2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_transfers_have_name_text_2"
+			        }
+			      ]
+			    },
+			    "report_transfer_has_selection_year": {
+			      "Binding": {
+			        "ConceptualEntity": "ReportTransfers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_transfer": {
+			          "Target": {
+			            "Entity": "report_transfer"
+			          }
+			        },
+			        "report_transfer.selection_year": {
+			          "Target": {
+			            "Entity": "report_transfer.selection_year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_transfer"
+			            },
+			            "Object": {
+			              "Role": "report_transfer.selection_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_transfers_have_selection_years"
+			        }
+			      ]
+			    },
+			    "report_transfer_has_report": {
+			      "Binding": {
+			        "ConceptualEntity": "ReportTransfers"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_transfer": {
+			          "Target": {
+			            "Entity": "report_transfer"
+			          }
+			        },
+			        "report_transfer.report": {
+			          "Target": {
+			            "Entity": "report_transfer.report"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_transfer"
+			            },
+			            "Object": {
+			              "Role": "report_transfer.report"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_transfers_have_report"
+			        }
+			      ]
+			    },
+			    "report_withdrawn_has_withdrawn_reports": {
+			      "Binding": {
+			        "ConceptualEntity": "Reports Withdrawn"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_withdrawn": {
+			          "Target": {
+			            "Entity": "report_withdrawn"
+			          }
+			        },
+			        "report_withdrawn.withdrawn_reports": {
+			          "Target": {
+			            "Entity": "report_withdrawn.withdrawn_reports"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_withdrawn"
+			            },
+			            "Object": {
+			              "Role": "report_withdrawn.withdrawn_reports"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_withdrawn_have_withdrawn_reports"
+			        }
+			      ]
+			    },
+			    "report_withdrawn_has_region": {
+			      "Binding": {
+			        "ConceptualEntity": "Reports Withdrawn"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_withdrawn": {
+			          "Target": {
+			            "Entity": "report_withdrawn"
+			          }
+			        },
+			        "report_withdrawn.region": {
+			          "Target": {
+			            "Entity": "report_withdrawn.region"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_withdrawn"
+			            },
+			            "Object": {
+			              "Role": "report_withdrawn.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_withdrawn_have_regions"
+			        }
+			      ]
+			    },
+			    "report_withdrawn_has_selection_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Reports Withdrawn"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_withdrawn": {
+			          "Target": {
+			            "Entity": "report_withdrawn"
+			          }
+			        },
+			        "report_withdrawn.selection_year": {
+			          "Target": {
+			            "Entity": "report_withdrawn.selection_year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_withdrawn"
+			            },
+			            "Object": {
+			              "Role": "report_withdrawn.selection_year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_withdrawn_have_selection_years"
+			        }
+			      ]
+			    },
+			    "report_withdrawn_has_date_withdrawn": {
+			      "Binding": {
+			        "ConceptualEntity": "Reports Withdrawn"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_withdrawn": {
+			          "Target": {
+			            "Entity": "report_withdrawn"
+			          }
+			        },
+			        "report_withdrawn.date_withdrawn": {
+			          "Target": {
+			            "Entity": "report_withdrawn.date_withdrawn"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_withdrawn"
+			            },
+			            "Object": {
+			              "Role": "report_withdrawn.date_withdrawn"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_withdrawn_have_date_withdrawn"
+			        }
+			      ]
+			    },
+			    "report_withdrawn_has_receive_customer_display_name_2": {
+			      "Binding": {
+			        "ConceptualEntity": "Reports Withdrawn"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_withdrawn": {
+			          "Target": {
+			            "Entity": "report_withdrawn"
+			          }
+			        },
+			        "report_withdrawn.receive_customer_display_name_2": {
+			          "Target": {
+			            "Entity": "report_withdrawn.receive_customer_display_name_2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_withdrawn"
+			            },
+			            "Object": {
+			              "Role": "report_withdrawn.receive_customer_display_name_2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_withdrawn_have_receive_customer_display_name_2"
+			        }
+			      ]
+			    },
+			    "report_withdrawn_has_receive_customer_display_name": {
+			      "Binding": {
+			        "ConceptualEntity": "Reports Withdrawn"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_withdrawn": {
+			          "Target": {
+			            "Entity": "report_withdrawn"
+			          }
+			        },
+			        "report_withdrawn.receive_customer_display_name": {
+			          "Target": {
+			            "Entity": "report_withdrawn.receive_customer_display_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_withdrawn"
+			            },
+			            "Object": {
+			              "Role": "report_withdrawn.receive_customer_display_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_withdrawn_have_receive_customer_display_name"
+			        }
+			      ]
+			    },
+			    "report_withdrawn_has_name_text": {
+			      "Binding": {
+			        "ConceptualEntity": "Reports Withdrawn"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_withdrawn": {
+			          "Target": {
+			            "Entity": "report_withdrawn"
+			          }
+			        },
+			        "report_withdrawn.name_text": {
+			          "Target": {
+			            "Entity": "report_withdrawn.name_text"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "report_withdrawn"
+			            },
+			            "Object": {
+			              "Role": "report_withdrawn.name_text"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "report_withdrawn_have_name_texts"
+			        }
+			      ]
+			    },
+			    "CSR_DF_version_has_DF_version": {
+			      "Binding": {
+			        "ConceptualEntity": "CSR_DF_Version"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CSR_DF_version": {
+			          "Target": {
+			            "Entity": "CSR_DF_version"
+			          }
+			        },
+			        "CSR_DF_version.DF_version": {
+			          "Target": {
+			            "Entity": "CSR_DF_version.DF_version"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CSR_DF_version"
+			            },
+			            "Object": {
+			              "Role": "CSR_DF_version.DF_version"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CSR_DF_versions_have_DF_versions"
+			        }
+			      ]
+			    },
+			    "CSR_DB_name_has_DB_name": {
 			      "Binding": {
 			        "ConceptualEntity": "CSR_DBName"
 			      },
@@ -2841,19 +4252,6 @@ cultureInfo en-US
 			      },
 			      "Phrasings": [
 			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "CSR_DB_name"
-			            },
-			            "Name": {
-			              "Role": "CSR_DB_name.DB_name"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "DB_names_are_names_IDs_of_CSR_DB_names"
-			        },
-			        {
 			          "Attribute": {
 			            "Subject": {
 			              "Role": "CSR_DB_name"
@@ -2865,90 +4263,19 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "CSR_DB_names_have_DB_names"
-			        }
-			      ]
-			    },
-			    "report_withdrawn_is_withdrawn_on_date_withdrawn": {
-			      "Binding": {
-			        "ConceptualEntity": "Reports Withdrawn"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "report_withdrawn": {
-			          "Target": {
-			            "Entity": "report_withdrawn"
-			          }
 			        },
-			        "report_withdrawn.date_withdrawn": {
-			          "Target": {
-			            "Entity": "report_withdrawn.date_withdrawn"
-			          }
-			        }
-			      },
-			      "SemanticSlots": {
-			        "When": {
-			          "Role": "report_withdrawn.date_withdrawn"
-			        }
-			      },
-			      "Phrasings": [
 			        {
-			          "Verb": {
-			            "Verbs": [
-			              {
-			                "withdraw": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "report_withdrawn"
+			          "Name": {
+			            "Subject": {
+			              "Role": "CSR_DB_name"
+			            },
+			            "Name": {
+			              "Role": "CSR_DB_name.DB_name"
 			            }
 			          },
 			          "State": "Generated",
-			          "Weight": 0.9,
-			          "ID": "report_withdrawn_are_withdrawn_on_date_withdrawn"
-			        }
-			      ]
-			    },
-			    "report_transfer_is_transferred_on_date_transferred": {
-			      "Binding": {
-			        "ConceptualEntity": "ReportTransfers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "report_transfer": {
-			          "Target": {
-			            "Entity": "report_transfer"
-			          }
-			        },
-			        "report_transfer.date_transferred": {
-			          "Target": {
-			            "Entity": "report_transfer.date_transferred"
-			          }
-			        }
-			      },
-			      "SemanticSlots": {
-			        "When": {
-			          "Role": "report_transfer.date_transferred"
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Verb": {
-			            "Verbs": [
-			              {
-			                "transfer": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "report_transfer"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.9,
-			          "ID": "report_transfers_are_transferred_on_date_transferred"
+			          "Weight": 0.99,
+			          "ID": "DB_names_are_names_IDs_of_CSR_DB_names"
 			        }
 			      ]
 			    },
@@ -2997,502 +4324,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "CSR_DF_version_has_DF_version": {
-			      "Binding": {
-			        "ConceptualEntity": "CSR_DF_Version"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "CSR_DF_version": {
-			          "Target": {
-			            "Entity": "CSR_DF_version"
-			          }
-			        },
-			        "CSR_DF_version.DF_version": {
-			          "Target": {
-			            "Entity": "CSR_DF_version.DF_version"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "CSR_DF_version"
-			            },
-			            "Object": {
-			              "Role": "CSR_DF_version.DF_version"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "CSR_DF_versions_have_DF_versions"
-			        }
-			      ]
-			    },
-			    "report_withdrawn_has_name_text": {
-			      "Binding": {
-			        "ConceptualEntity": "Reports Withdrawn"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "report_withdrawn": {
-			          "Target": {
-			            "Entity": "report_withdrawn"
-			          }
-			        },
-			        "report_withdrawn.name_text": {
-			          "Target": {
-			            "Entity": "report_withdrawn.name_text"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "report_withdrawn"
-			            },
-			            "Object": {
-			              "Role": "report_withdrawn.name_text"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "report_withdrawn_have_name_texts"
-			        }
-			      ]
-			    },
-			    "report_withdrawn_has_receive_customer_display_name": {
-			      "Binding": {
-			        "ConceptualEntity": "Reports Withdrawn"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "report_withdrawn": {
-			          "Target": {
-			            "Entity": "report_withdrawn"
-			          }
-			        },
-			        "report_withdrawn.receive_customer_display_name": {
-			          "Target": {
-			            "Entity": "report_withdrawn.receive_customer_display_name"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "report_withdrawn"
-			            },
-			            "Object": {
-			              "Role": "report_withdrawn.receive_customer_display_name"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "report_withdrawn_have_receive_customer_display_name"
-			        }
-			      ]
-			    },
-			    "report_withdrawn_has_receive_customer_display_name_2": {
-			      "Binding": {
-			        "ConceptualEntity": "Reports Withdrawn"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "report_withdrawn": {
-			          "Target": {
-			            "Entity": "report_withdrawn"
-			          }
-			        },
-			        "report_withdrawn.receive_customer_display_name_2": {
-			          "Target": {
-			            "Entity": "report_withdrawn.receive_customer_display_name_2"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "report_withdrawn"
-			            },
-			            "Object": {
-			              "Role": "report_withdrawn.receive_customer_display_name_2"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "report_withdrawn_have_receive_customer_display_name_2"
-			        }
-			      ]
-			    },
-			    "report_withdrawn_has_date_withdrawn": {
-			      "Binding": {
-			        "ConceptualEntity": "Reports Withdrawn"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "report_withdrawn": {
-			          "Target": {
-			            "Entity": "report_withdrawn"
-			          }
-			        },
-			        "report_withdrawn.date_withdrawn": {
-			          "Target": {
-			            "Entity": "report_withdrawn.date_withdrawn"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "report_withdrawn"
-			            },
-			            "Object": {
-			              "Role": "report_withdrawn.date_withdrawn"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "report_withdrawn_have_date_withdrawn"
-			        }
-			      ]
-			    },
-			    "report_withdrawn_has_selection_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Reports Withdrawn"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "report_withdrawn": {
-			          "Target": {
-			            "Entity": "report_withdrawn"
-			          }
-			        },
-			        "report_withdrawn.selection_year": {
-			          "Target": {
-			            "Entity": "report_withdrawn.selection_year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "report_withdrawn"
-			            },
-			            "Object": {
-			              "Role": "report_withdrawn.selection_year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "report_withdrawn_have_selection_years"
-			        }
-			      ]
-			    },
-			    "report_withdrawn_has_region": {
-			      "Binding": {
-			        "ConceptualEntity": "Reports Withdrawn"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "report_withdrawn": {
-			          "Target": {
-			            "Entity": "report_withdrawn"
-			          }
-			        },
-			        "report_withdrawn.region": {
-			          "Target": {
-			            "Entity": "report_withdrawn.region"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "report_withdrawn"
-			            },
-			            "Object": {
-			              "Role": "report_withdrawn.region"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "report_withdrawn_have_regions"
-			        }
-			      ]
-			    },
-			    "report_withdrawn_has_withdrawn_reports": {
-			      "Binding": {
-			        "ConceptualEntity": "Reports Withdrawn"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "report_withdrawn": {
-			          "Target": {
-			            "Entity": "report_withdrawn"
-			          }
-			        },
-			        "report_withdrawn.withdrawn_reports": {
-			          "Target": {
-			            "Entity": "report_withdrawn.withdrawn_reports"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "report_withdrawn"
-			            },
-			            "Object": {
-			              "Role": "report_withdrawn.withdrawn_reports"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "report_withdrawn_have_withdrawn_reports"
-			        }
-			      ]
-			    },
-			    "report_transfer_has_name_text": {
-			      "Binding": {
-			        "ConceptualEntity": "ReportTransfers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "report_transfer": {
-			          "Target": {
-			            "Entity": "report_transfer"
-			          }
-			        },
-			        "report_transfer.name_text": {
-			          "Target": {
-			            "Entity": "report_transfer.name_text"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "report_transfer"
-			            },
-			            "Object": {
-			              "Role": "report_transfer.name_text"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "report_transfers_have_name_texts"
-			        }
-			      ]
-			    },
-			    "report_transfer_has_selection_year": {
-			      "Binding": {
-			        "ConceptualEntity": "ReportTransfers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "report_transfer": {
-			          "Target": {
-			            "Entity": "report_transfer"
-			          }
-			        },
-			        "report_transfer.selection_year": {
-			          "Target": {
-			            "Entity": "report_transfer.selection_year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "report_transfer"
-			            },
-			            "Object": {
-			              "Role": "report_transfer.selection_year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "report_transfers_have_selection_years"
-			        }
-			      ]
-			    },
-			    "report_transfer_has_name_text_2": {
-			      "Binding": {
-			        "ConceptualEntity": "ReportTransfers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "report_transfer": {
-			          "Target": {
-			            "Entity": "report_transfer"
-			          }
-			        },
-			        "report_transfer.name_text_2": {
-			          "Target": {
-			            "Entity": "report_transfer.name_text_2"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "report_transfer"
-			            },
-			            "Object": {
-			              "Role": "report_transfer.name_text_2"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "report_transfers_have_name_text_2"
-			        }
-			      ]
-			    },
-			    "report_transfer_has_source_customer_display_name": {
-			      "Binding": {
-			        "ConceptualEntity": "ReportTransfers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "report_transfer": {
-			          "Target": {
-			            "Entity": "report_transfer"
-			          }
-			        },
-			        "report_transfer.source_customer_display_name": {
-			          "Target": {
-			            "Entity": "report_transfer.source_customer_display_name"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "report_transfer"
-			            },
-			            "Object": {
-			              "Role": "report_transfer.source_customer_display_name"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "report_transfers_have_source_customer_display_names"
-			        }
-			      ]
-			    },
-			    "report_transfer_has_source_customer_code": {
-			      "Binding": {
-			        "ConceptualEntity": "ReportTransfers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "report_transfer": {
-			          "Target": {
-			            "Entity": "report_transfer"
-			          }
-			        },
-			        "report_transfer.source_customer_code": {
-			          "Target": {
-			            "Entity": "report_transfer.source_customer_code"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "report_transfer"
-			            },
-			            "Object": {
-			              "Role": "report_transfer.source_customer_code"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "report_transfers_have_source_customer_codes"
-			        }
-			      ]
-			    },
-			    "report_transfer_has_destination_customer_display_name": {
-			      "Binding": {
-			        "ConceptualEntity": "ReportTransfers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "report_transfer": {
-			          "Target": {
-			            "Entity": "report_transfer"
-			          }
-			        },
-			        "report_transfer.destination_customer_display_name": {
-			          "Target": {
-			            "Entity": "report_transfer.destination_customer_display_name"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "report_transfer"
-			            },
-			            "Object": {
-			              "Role": "report_transfer.destination_customer_display_name"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "report_transfers_have_destination_customer_display_names"
-			        }
-			      ]
-			    },
-			    "report_transfer_has_destination_customer_code": {
-			      "Binding": {
-			        "ConceptualEntity": "ReportTransfers"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "report_transfer": {
-			          "Target": {
-			            "Entity": "report_transfer"
-			          }
-			        },
-			        "report_transfer.destination_customer_code": {
-			          "Target": {
-			            "Entity": "report_transfer.destination_customer_code"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "report_transfer"
-			            },
-			            "Object": {
-			              "Role": "report_transfer.destination_customer_code"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "report_transfers_have_destination_customer_codes"
-			        }
-			      ]
-			    },
-			    "report_transfer_has_date_transferred": {
+			    "report_transfer_is_transferred_on_date_transferred": {
 			      "Binding": {
 			        "ConceptualEntity": "ReportTransfers"
 			      },
@@ -3509,19 +4341,103 @@ cultureInfo en-US
 			          }
 			        }
 			      },
+			      "SemanticSlots": {
+			        "When": {
+			          "Role": "report_transfer.date_transferred"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Verbs": [
+			              {
+			                "transfer": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "report_transfer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.9,
+			          "ID": "report_transfers_are_transferred_on_date_transferred"
+			        }
+			      ]
+			    },
+			    "report_withdrawn_is_withdrawn_on_date_withdrawn": {
+			      "Binding": {
+			        "ConceptualEntity": "Reports Withdrawn"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "report_withdrawn": {
+			          "Target": {
+			            "Entity": "report_withdrawn"
+			          }
+			        },
+			        "report_withdrawn.date_withdrawn": {
+			          "Target": {
+			            "Entity": "report_withdrawn.date_withdrawn"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "When": {
+			          "Role": "report_withdrawn.date_withdrawn"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Verbs": [
+			              {
+			                "withdraw": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "report_withdrawn"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.9,
+			          "ID": "report_withdrawn_are_withdrawn_on_date_withdrawn"
+			        }
+			      ]
+			    },
+			    "workspace_UUID_has_dataflow_UUID": {
+			      "Binding": {
+			        "ConceptualEntity": "Workspace_UUID"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "workspace_UUID": {
+			          "Target": {
+			            "Entity": "workspace_UUID"
+			          }
+			        },
+			        "dataflow_UUID": {
+			          "Target": {
+			            "Entity": "dataflow_UUID"
+			          }
+			        }
+			      },
 			      "Phrasings": [
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "report_transfer"
+			              "Role": "workspace_UUID"
 			            },
 			            "Object": {
-			              "Role": "report_transfer.date_transferred"
+			              "Role": "dataflow_UUID"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "report_transfers_have_date_transferred"
+			          "ID": "workspace_UUIDs_have_dataflow_UUIDs"
 			        }
 			      ]
 			    },
