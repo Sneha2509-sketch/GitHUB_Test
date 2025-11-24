@@ -5,11 +5,11 @@ table ReportTransfers
 		formatString: 0
 		lineageTag: ebda8209-9edc-4d8b-ab54-7765ac77ef71
 
-	column region
+	column Report#
 		dataType: string
 		lineageTag: f4357fe4-33bc-4fe9-8c34-c05a9cab7370
 		summarizeBy: none
-		sourceColumn: region
+		sourceColumn: Report#
 
 		annotation SummarizationSetBy = Automatic
 
@@ -22,11 +22,11 @@ table ReportTransfers
 
 		annotation SummarizationSetBy = Automatic
 
-	column name_text2
+	column Region
 		dataType: string
 		lineageTag: 77399fbd-d384-4220-9536-66baa7c7f60c
 		summarizeBy: none
-		sourceColumn: name_text2
+		sourceColumn: Region
 
 		annotation SummarizationSetBy = Automatic
 
@@ -85,7 +85,7 @@ table ReportTransfers
 				    #"d2047b47-62df-451b-862d-5722b41221ba" = Workspaces{[workspaceId=getWorkspaceUUID()]}[Data],
 				    #"c38ec2a8-0358-4a84-9527-173499d34c32" = #"d2047b47-62df-451b-862d-5722b41221ba"{[dataflowId=getDataflowUUID("Component Selections Reconciliation_DF")]}[Data],
 				    ReportTransfers_ = #"c38ec2a8-0358-4a84-9527-173499d34c32"{[entity="ReportTransfers",version=""]}[Data],
-				    #"Renamed Columns" = Table.RenameColumns(ReportTransfers_,{{"name_text", "region"}})
+				    #"Renamed Columns" = Table.RenameColumns(ReportTransfers_,{{"name_text", "Report#"}, {"name_text2", "Region"}})
 				in
 				    #"Renamed Columns"
 
