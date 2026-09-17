@@ -1,0 +1,233 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.12.0/schema.json",
+  "name": "5805c2d838a0278d9234",
+  "position": {
+    "x": 301,
+    "y": 540,
+    "z": 7003,
+    "height": 515,
+    "width": 1554,
+    "tabOrder": 7003
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Project"
+                    }
+                  },
+                  "Property": "project_number"
+                }
+              },
+              "queryRef": "Project.project_number",
+              "nativeQueryRef": "project_number"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Project"
+                    }
+                  },
+                  "Property": "Age"
+                }
+              },
+              "queryRef": "Project.Age",
+              "nativeQueryRef": "Age",
+              "displayName": "Age"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Project"
+                    }
+                  },
+                  "Property": "date_project_starts"
+                }
+              },
+              "queryRef": "Project.date_project_starts",
+              "nativeQueryRef": "Date Project Starts",
+              "displayName": "Date Project Starts"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Project"
+                    }
+                  },
+                  "Property": "date_project_ends"
+                }
+              },
+              "queryRef": "Project.date_project_ends",
+              "nativeQueryRef": "Date Project Ends",
+              "displayName": "Date Project Ends"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Project"
+                    }
+                  },
+                  "Property": "name_text"
+                }
+              },
+              "queryRef": "Project.name_text",
+              "nativeQueryRef": "Project",
+              "displayName": "Project"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Project"
+                    }
+                  },
+                  "Property": "Project Revenue"
+                }
+              },
+              "queryRef": "Project.Project Revenue",
+              "nativeQueryRef": "Project Revenue",
+              "displayName": "Project Revenue"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Project"
+                    }
+                  },
+                  "Property": "customer_code"
+                }
+              },
+              "queryRef": "Project.customer_code",
+              "nativeQueryRef": "Customer Code",
+              "displayName": "Customer Code"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "deliverable_type"
+                    }
+                  },
+                  "Property": "Deliverable Type"
+                }
+              },
+              "queryRef": "deliverable_type.Deliverable Type",
+              "nativeQueryRef": "Deliverable Type",
+              "displayName": "Deliverable Type"
+            }
+          ],
+          "fieldParameters": [
+            {
+              "parameterExpr": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Project_BY"
+                    }
+                  },
+                  "Property": "Project_BY"
+                }
+              },
+              "index": 1,
+              "length": 7
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "6e25332866aabdec3673",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Project"
+              }
+            },
+            "Property": "project_number"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "6c3215a8ee16a4891152",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Project"
+              }
+            },
+            "Property": "date_project_starts"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "8858b2627bda58b91e3c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Project"
+              }
+            },
+            "Property": "date_project_ends"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "a4281875620cae802035",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Project"
+              }
+            },
+            "Property": "Project Revenue"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "6419575e19689179d839",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Project"
+              }
+            },
+            "Property": "customer_code"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}
