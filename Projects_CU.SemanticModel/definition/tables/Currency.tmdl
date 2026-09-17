@@ -1,0 +1,59 @@
+table Currency
+	lineageTag: be2c6c62-f340-4d49-88a9-f75b96027a9f
+	sourceLineageTag: [dbo].[Currency]
+
+	column currency_iso_code
+		dataType: string
+		lineageTag: e3e0bd5b-dcde-4160-a635-f9617dddb1b6
+		sourceLineageTag: currency_iso_code
+		summarizeBy: none
+		sourceColumn: currency_iso_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column description
+		dataType: string
+		lineageTag: 649f9c8d-6f0e-4b36-b321-32021ada16ff
+		sourceLineageTag: description
+		summarizeBy: none
+		sourceColumn: description
+
+		annotation SummarizationSetBy = Automatic
+
+	column status
+		dataType: int64
+		formatString: 0
+		lineageTag: 1557a2cc-d54d-48c6-a82a-65d09097ce41
+		sourceLineageTag: status
+		summarizeBy: none
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column format_expr
+		dataType: string
+		lineageTag: 5f836e50-b37e-4ae6-a36c-7cd04acb2fda
+		sourceLineageTag: format_expr
+		summarizeBy: none
+		sourceColumn: format_expr
+
+		annotation SummarizationSetBy = Automatic
+
+	column exchange_rate
+		dataType: double
+		lineageTag: 1652a53b-6c4b-4a4a-ba8d-e3d479eef11d
+		sourceLineageTag: exchange_rate
+		summarizeBy: none
+		sourceColumn: exchange_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Currency = entity
+		mode: directLake
+		source
+			entityName: Currency
+			schemaName: dbo
+			expressionSource: 'DirectLake - Project_LH'
+

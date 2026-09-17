@@ -1,0 +1,68 @@
+table destination_currency
+	lineageTag: 1b90193b-66fe-4836-81e7-9ec8609a1330
+	sourceLineageTag: [dbo].[destination_currency]
+
+	measure 'Destination Format' =
+			
+			VAR selectedFormat = SELECTEDVALUE('destination_currency'[format_expr])
+			RETURN
+			    selectedFormat
+		lineageTag: c7056123-a082-4a31-8001-85cbac586844
+
+		changedProperty = Name
+
+	column currency_iso_code
+		dataType: string
+		lineageTag: 8d2308d9-e8c0-4459-8cd4-239052e1280d
+		sourceLineageTag: currency_iso_code
+		summarizeBy: none
+		sourceColumn: currency_iso_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column description
+		dataType: string
+		lineageTag: d873fa6a-5f26-487b-bd08-52b32ae5ee9d
+		sourceLineageTag: description
+		summarizeBy: none
+		sourceColumn: description
+
+		annotation SummarizationSetBy = Automatic
+
+	column status
+		dataType: int64
+		formatString: 0
+		lineageTag: 3902d43e-3385-409b-b41b-80c20990e6b1
+		sourceLineageTag: status
+		summarizeBy: sum
+		sourceColumn: status
+
+		annotation SummarizationSetBy = Automatic
+
+	column format_expr
+		dataType: string
+		lineageTag: e295e42b-18ef-4c04-9cc7-63ca117a9b3f
+		sourceLineageTag: format_expr
+		summarizeBy: none
+		sourceColumn: format_expr
+
+		annotation SummarizationSetBy = Automatic
+
+	column exchange_rate
+		dataType: double
+		lineageTag: 3191376e-78a9-4648-bc2e-08673518c49e
+		sourceLineageTag: exchange_rate
+		summarizeBy: sum
+		sourceColumn: exchange_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition destination_currency = entity
+		mode: directLake
+		source
+			entityName: destination_currency
+			schemaName: dbo
+			expressionSource: 'DirectLake - Project_LH'
+

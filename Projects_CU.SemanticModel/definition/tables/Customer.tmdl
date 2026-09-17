@@ -1,0 +1,29 @@
+table Customer
+	lineageTag: 405ef1bb-e0e1-4152-b21f-96c45db640ff
+	sourceLineageTag: [dbo].[Customer]
+
+	column id
+		dataType: string
+		lineageTag: a062fea9-80a1-4f9c-bece-99173b68921a
+		sourceLineageTag: id
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_name
+		dataType: string
+		lineageTag: 270a5718-3ed5-45be-a9aa-115b1f928ed0
+		sourceLineageTag: customer_name
+		summarizeBy: none
+		sourceColumn: customer_name
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Customer = entity
+		mode: directLake
+		source
+			entityName: Customer
+			schemaName: dbo
+			expressionSource: 'DirectLake - Project_LH'
+

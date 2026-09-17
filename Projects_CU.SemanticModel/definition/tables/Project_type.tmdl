@@ -1,0 +1,38 @@
+table Project_type
+	lineageTag: af9c328b-08a6-47e1-8543-57c8311fdd79
+	sourceLineageTag: [dbo].[Project_type]
+
+	column id
+		dataType: string
+		lineageTag: 6df80dec-dea6-43ab-b745-0e99c6a7f10a
+		sourceLineageTag: id
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column name_text
+		dataType: string
+		lineageTag: 488b2863-a17c-428b-8575-35d43512e202
+		sourceLineageTag: name_text
+		summarizeBy: none
+		sourceColumn: name_text
+
+		annotation SummarizationSetBy = Automatic
+
+	column business_code
+		dataType: string
+		lineageTag: 36709e9c-a96e-4002-9113-bdea29d3d131
+		sourceLineageTag: business_code
+		summarizeBy: none
+		sourceColumn: business_code
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Project_type = entity
+		mode: directLake
+		source
+			entityName: Project_type
+			schemaName: dbo
+			expressionSource: 'DirectLake - Project_LH'
+

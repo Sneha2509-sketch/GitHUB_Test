@@ -1,0 +1,123 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowModernEvaluationEngine": true
+  },
+  "name": "Project_TestCU",
+  "queryGroups": [],
+  "documentLocale": "en-GB",
+  "gatewayObjectId": "26210d0e-82be-4ddb-b328-c538c8e6bd89",
+  "queriesMetadata": {
+    "Project": {
+      "queryId": "8e4b9dc6-c3d1-4b53-8eed-1f40a4107966",
+      "queryName": "Project",
+      "loadEnabled": false
+    },
+    "Project_type": {
+      "queryId": "c8554693-d32b-46d5-b19f-96af3f4cd19b",
+      "queryName": "Project_type",
+      "loadEnabled": false
+    },
+    "Project_DataDestination": {
+      "queryId": "482b5203-b665-42ee-ad1a-eef33ab47c42",
+      "queryName": "Project_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "Project_type_DataDestination": {
+      "queryId": "9477e8b5-e5f7-4960-954c-f8a330294bf1",
+      "queryName": "Project_type_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "Currency": {
+      "queryId": "46834f1f-788f-43f7-9706-28147dabd00a",
+      "queryName": "Currency",
+      "loadEnabled": false
+    },
+    "Currency_DataDestination": {
+      "queryId": "739f5f2b-cefb-4ec8-9c24-e8d36e82b541",
+      "queryName": "Currency_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "Site": {
+      "queryId": "f3f26ae3-49c1-47c7-94e6-2f94d3f14714",
+      "queryName": "Site",
+      "loadEnabled": false
+    },
+    "Site_DataDestination": {
+      "queryId": "03880e53-5387-4e2c-b44e-3b4827a5f36e",
+      "queryName": "Site_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "Organization": {
+      "queryId": "a539601a-dda3-40a7-aeae-0a476d6f9974",
+      "queryName": "Organization",
+      "loadEnabled": false
+    },
+    "Organization_DataDestination": {
+      "queryId": "40815d48-4112-44a7-bdfb-965a1802ba00",
+      "queryName": "Organization_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "Customer": {
+      "queryId": "3ab48904-4105-4707-874e-5c2d245c4a8a",
+      "queryName": "Customer",
+      "loadEnabled": false
+    },
+    "Customer_DataDestination": {
+      "queryId": "6e395e3f-9616-4884-862f-e25554ef4ac2",
+      "queryName": "Customer_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "deliverable_type": {
+      "queryId": "b4ca51f7-37cf-4aea-a471-6622ab715370",
+      "queryName": "deliverable_type",
+      "loadEnabled": false
+    },
+    "deliverable_type_DataDestination": {
+      "queryId": "97ab78b1-0036-4a3e-80fe-be7451a4232a",
+      "queryName": "deliverable_type_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "project_requested_deliverable": {
+      "queryId": "7dd99751-6eae-4f42-bb79-d8ab661ddd9c",
+      "queryName": "project_requested_deliverable",
+      "loadEnabled": false
+    },
+    "project_requested_deliverable_DataDestination": {
+      "queryId": "1c6beedf-1898-4c4c-b26d-7982dbc966c5",
+      "queryName": "project_requested_deliverable_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "Calendar": {
+      "queryId": "5d82e7a6-60dc-44ef-be8b-5c4ac2d3694e",
+      "queryName": "Calendar",
+      "loadEnabled": false
+    },
+    "Calendar_DataDestination": {
+      "queryId": "29ccc686-5109-49e6-9583-353d04dfb1ef",
+      "queryName": "Calendar_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "localhost;gbs-trutesta-production",
+      "kind": "PostgreSQL",
+      "connectionId": "{\"ClusterId\":\"26210d0e-82be-4ddb-b328-c538c8e6bd89\",\"DatasourceId\":\"42f68065-54c4-4233-b04b-0d7043514734\"}"
+    },
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"26210d0e-82be-4ddb-b328-c538c8e6bd89\",\"DatasourceId\":\"14676b39-e126-4340-96ba-d874334f40c2\"}"
+    }
+  ]
+}

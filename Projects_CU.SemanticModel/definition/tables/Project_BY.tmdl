@@ -1,0 +1,62 @@
+table Project_BY
+	lineageTag: 6bc95cd0-a678-4b59-bf8c-6a33e3ad3556
+
+	column Project_BY
+		lineageTag: 163671e0-9e09-443a-b2b2-dfc0a5297f3e
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Project_BY Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Project_BY Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Project_BY Fields'
+		isHidden
+		lineageTag: b65b5338-4250-444d-ad44-e0cd5857ec6e
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Project_BY Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Project_BY Order'
+		isHidden
+		formatString: 0
+		lineageTag: 907eb290-af6e-460e-b67f-33301eaddc3d
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Project_BY = calculated
+		mode: import
+		source =
+				{
+				    ("Age", NAMEOF('Project'[Age]), 0),
+				    ("Date Project Starts", NAMEOF('Project'[date_project_starts]), 1),
+				    ("Date Project Ends", NAMEOF('Project'[date_project_ends]), 2),
+				    ("Project", NAMEOF('Project'[name_text]), 3),
+				    ("Reference Source", NAMEOF('Project'[reference_source]), 4),
+				    ("Project Revenue", NAMEOF('Project'[Project Revenue]), 5),
+				    ("Customer Code", NAMEOF('Project'[customer_code]), 6),
+				    ("Customer", NAMEOF('Project'[customer_display_name]), 7),
+				    ("Site", NAMEOF('Site'[Site]), 8),
+				    ("Project Type", NAMEOF('Project_type'[name_text]), 9),
+				    ("State", NAMEOF('Project_States'[State]), 10),
+				    ("Organization", NAMEOF('Organization'[Organization]), 11),
+				    ("Deliverable Type", NAMEOF('deliverable_type'[Deliverable Type]), 12),
+				    ("Total Invoiced Revenue", NAMEOF('Project'[Total Invoiced Revenue]), 13),
+				    ("Total Non-Invoiced Revenue", NAMEOF('Project'[Total Non-Invoiced Revenue]), 14),
+				    ("Total Unallocated Revenue", NAMEOF('Project'[Total Unallocated Revenue]), 15)
+				}
+
+	annotation PBI_Id = 1c98a5aef26141bba8839067e81cb0df
+

@@ -1,0 +1,69 @@
+table project_requested_deliverable
+	lineageTag: 674fb29b-c210-460c-8205-f53401e0aafc
+	sourceLineageTag: [dbo].[project_requested_deliverable]
+
+	column id
+		dataType: string
+		lineageTag: f29fb139-4432-42c1-8d61-ba7adb09e6d4
+		sourceLineageTag: id
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column project_id
+		dataType: string
+		lineageTag: 615bd8ed-98c8-445d-b1ed-34caa64d2063
+		sourceLineageTag: project_id
+		summarizeBy: none
+		sourceColumn: project_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column requested_deliverable_type_id
+		dataType: string
+		lineageTag: 574fd138-093d-4d35-a50c-3452815d3f97
+		sourceLineageTag: requested_deliverable_type_id
+		summarizeBy: none
+		sourceColumn: requested_deliverable_type_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column deliverable_name
+		dataType: string
+		lineageTag: 4cd23534-c17d-438d-a01e-6c31eefe22fa
+		sourceLineageTag: deliverable_name
+		summarizeBy: none
+		sourceColumn: deliverable_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column invoiced_revenue
+		dataType: double
+		lineageTag: 414a8933-e7bb-4c1b-994d-e526db75358e
+		sourceLineageTag: invoiced_revenue
+		summarizeBy: sum
+		sourceColumn: invoiced_revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column non_invoiced_revenue
+		dataType: double
+		lineageTag: b6e7d19f-d7df-4fdb-8cc4-13c14b3eeddf
+		sourceLineageTag: non_invoiced_revenue
+		summarizeBy: sum
+		sourceColumn: non_invoiced_revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition project_requested_deliverable = entity
+		mode: directLake
+		source
+			entityName: project_requested_deliverable
+			schemaName: dbo
+			expressionSource: 'DirectLake - Project_LH'
+

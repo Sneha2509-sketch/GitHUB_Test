@@ -1,0 +1,32 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	discourageImplicitMeasures
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["DirectLake - Project_LH","Project_States"]
+
+annotation PBI_ProTooling = ["DirectLakeOnOneLakeInWeb","WebModelingEdit","CalcGroup"]
+
+ref table Customer
+ref table Site
+ref table Currency
+ref table deliverable_type
+ref table Organization
+ref table Project
+ref table Project_type
+ref table project_requested_deliverable
+ref table destination_currency
+ref table 'Revenue By'
+ref table Calendar
+ref table Project_States
+ref table 'Y Axis'
+ref table Project_BY
+ref table 'Calculation group'
+ref table 'Calculation group 2'
+

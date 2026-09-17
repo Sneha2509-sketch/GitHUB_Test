@@ -1,0 +1,53 @@
+table 'Y Axis'
+	lineageTag: 2b2c3dd5-a655-499e-b9c9-7eb0a609581b
+
+	column 'Y Axis'
+		lineageTag: 0b2e29a3-3350-4eb8-b2d2-cd146f415752
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Y Axis Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Y Axis Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Y Axis Fields'
+		isHidden
+		lineageTag: 7bfdda7a-ae22-4f3f-bbba-06e31b7c9285
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Y Axis Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Y Axis Order'
+		isHidden
+		formatString: 0
+		lineageTag: a743552a-2644-472a-9eec-28b6da371cc6
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Y Axis' = calculated
+		mode: import
+		source =
+				{
+				    ("Organization", NAMEOF('Organization'[Organization]), 0),
+				    ("Project Number", NAMEOF('Project'[project_number]), 1),
+				    ("State", NAMEOF('Project_States'[State]), 2),
+				    ("Deliverable Type", NAMEOF('deliverable_type'[Deliverable Type]), 3),
+				    ("Customer", NAMEOF('Project'[customer_display_name]), 4),
+				    ("Reference Source", NAMEOF('Project'[reference_source]), 5),
+				    ("Project Type", NAMEOF('Project_type'[name_text]), 6)
+				}
+
+	annotation PBI_Id = bd626214a6084db3b13dccfb06a883e0
+

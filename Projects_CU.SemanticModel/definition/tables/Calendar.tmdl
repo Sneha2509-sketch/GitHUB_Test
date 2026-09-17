@@ -1,0 +1,90 @@
+table Calendar
+	lineageTag: ba88bef1-cd16-4ed3-8b2e-ab818f04a1e1
+	sourceLineageTag: [dbo].[Calendar]
+	dataCategory: Time
+
+	column Date
+		dataType: dateTime
+		isKey
+		formatString: Long Date
+		lineageTag: f258044f-ff81-430e-a706-b803bf3f458b
+		sourceLineageTag: Date
+		summarizeBy: none
+		sourceColumn: Date
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: 76101b4f-482c-4719-91c9-edf2feaaab48
+		sourceLineageTag: Year
+		summarizeBy: none
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Number'
+		dataType: int64
+		formatString: 0
+		lineageTag: 44d9bef9-c780-4992-b716-14b452544d60
+		sourceLineageTag: Month Number
+		summarizeBy: none
+		sourceColumn: Month Number
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Name'
+		dataType: string
+		lineageTag: 5fcc784d-fceb-4afa-957d-6640ffe54d9d
+		sourceLineageTag: Month Name
+		summarizeBy: none
+		sourceColumn: Month Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		dataType: string
+		lineageTag: 48eff1c6-887a-4541-82a9-a13c375dc57b
+		sourceLineageTag: Quarter
+		summarizeBy: none
+		sourceColumn: Quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column Day
+		dataType: int64
+		formatString: 0
+		lineageTag: 1f19fa92-45b6-483b-a711-a893cf985bfd
+		sourceLineageTag: Day
+		summarizeBy: none
+		sourceColumn: Day
+
+		annotation SummarizationSetBy = Automatic
+
+	hierarchy 'Date Hierarchy'
+		lineageTag: 573aa67b-b178-412e-a7ab-9df2b414bac9
+
+		level Year
+			lineageTag: d594df51-a0fe-4667-a8d3-dd65fac8f7a2
+			column: Year
+
+		level 'Month Name'
+			lineageTag: 75716417-1670-4cdf-bb43-77fafbeded6b
+			column: 'Month Name'
+
+		level Day
+			lineageTag: f16c64cb-c476-4a19-a295-1f023c801637
+			column: Day
+
+	partition Calendar = entity
+		mode: directLake
+		source
+			entityName: Calendar
+			schemaName: dbo
+			expressionSource: 'DirectLake - Project_LH'
+

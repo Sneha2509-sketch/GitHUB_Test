@@ -1,0 +1,26 @@
+table 'Calculation group 2'
+	lineageTag: adce874b-fe27-43c5-8171-32b06f810847
+
+	calculationGroup
+		precedence: 1
+
+		calculationItem 'Running sum' = RUNNINGSUM([Running Total of Project Revenue])
+
+	column 'Calculation group column'
+		dataType: string
+		lineageTag: 13361ce9-991c-4b9c-aedb-b98f91b055a7
+		summarizeBy: none
+		sourceColumn: Name
+		sortByColumn: Ordinal
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ordinal
+		dataType: int64
+		formatString: 0
+		lineageTag: a296594b-144f-4d40-849c-b2ecf4d8cd42
+		summarizeBy: sum
+		sourceColumn: Ordinal
+
+		annotation SummarizationSetBy = Automatic
+

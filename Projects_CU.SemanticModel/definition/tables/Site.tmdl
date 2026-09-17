@@ -1,0 +1,29 @@
+table Site
+	lineageTag: bbbf5ae6-063f-46ec-acb3-5723ee1d92ef
+	sourceLineageTag: [dbo].[Site]
+
+	column id
+		dataType: string
+		lineageTag: d12cf626-e7ce-40a0-b0ae-095680c58031
+		sourceLineageTag: id
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column Site
+		dataType: string
+		lineageTag: 61920ec1-0dbe-4e74-b928-38b1f14c683b
+		sourceLineageTag: Site
+		summarizeBy: none
+		sourceColumn: Site
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Site = entity
+		mode: directLake
+		source
+			entityName: Site
+			schemaName: dbo
+			expressionSource: 'DirectLake - Project_LH'
+

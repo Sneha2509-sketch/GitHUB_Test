@@ -1,0 +1,33 @@
+relationship 581f2b62-cfff-fba6-2a72-2c0a6cec8229
+	fromColumn: Project.organization_id
+	toColumn: Organization.id
+
+relationship 3220915c-21e0-33e4-b70f-56708d52f909
+	fromColumn: Project.project_type_id
+	toColumn: Project_type.id
+
+relationship 04ff64ec-c5ca-697e-8e2d-cb4e3e91284b
+	fromColumn: Organization.site_id
+	toColumn: Site.id
+
+relationship 3bcffabb-bdd0-44c5-b104-2cef7f842a52
+	fromColumn: Project.id
+	toColumn: project_requested_deliverable.project_id
+
+relationship 204b371c-bfc2-2744-682a-03f49ed49890
+	crossFilteringBehavior: bothDirections
+	fromColumn: project_requested_deliverable.requested_deliverable_type_id
+	toColumn: deliverable_type.id
+
+relationship 97bac649-9251-286a-dbec-e00a4d0442b0
+	fromColumn: Project.currency_iso_code
+	toColumn: Currency.currency_iso_code
+
+relationship 88038c11-9dce-6238-2fd8-6557802d46ed
+	fromColumn: Project.date_created
+	toColumn: Calendar.Date
+
+relationship ffe6df78-15dd-4f8e-361b-377b8120101a
+	fromColumn: Project.state
+	toColumn: Project_States.Code
+

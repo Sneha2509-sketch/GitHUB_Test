@@ -1,0 +1,29 @@
+table Project_States
+	lineageTag: bb15cbc3-3d79-4ca9-9e82-571fe3da9aef
+
+	column Code
+		dataType: string
+		lineageTag: 750abe44-69c8-4183-8954-78c574da4e9d
+		summarizeBy: none
+		sourceColumn: Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column State
+		dataType: string
+		lineageTag: d9e1c064-db8c-4ae3-b11f-ba5c3550ad17
+		summarizeBy: none
+		sourceColumn: State
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Project_States = m
+		mode: import
+		source =
+				let
+				  Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WKijKz0pNLtErLkksSdVLTC7JLEtV0lFyhDBiddBVJCfmJafmpKYA1TjDmJiqClLzUjLz0oGKAqAsTDUlqbkF+UWJRZVAVSFwNhazEkuLwfYFQBhY3JSfW5CTWgJxFJwdGwsA", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Code = _t, State = _t])
+				in
+				  Source
+
+	annotation PBI_ResultType = Table
+

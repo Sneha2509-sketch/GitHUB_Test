@@ -1,0 +1,38 @@
+table Organization
+	lineageTag: 3d6cb606-68bc-4cb0-b941-42c975fe3588
+	sourceLineageTag: [dbo].[Organization]
+
+	column id
+		dataType: string
+		lineageTag: 9cc7fd33-8041-489a-89ed-fbffabccecbe
+		sourceLineageTag: id
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column site_id
+		dataType: string
+		lineageTag: 0b955031-9d57-4fcc-8917-f3b5c46dbf78
+		sourceLineageTag: site_id
+		summarizeBy: none
+		sourceColumn: site_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column Organization
+		dataType: string
+		lineageTag: f1feb10f-482f-4045-a588-cdd691ea6b68
+		sourceLineageTag: Organization
+		summarizeBy: none
+		sourceColumn: Organization
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Organization = entity
+		mode: directLake
+		source
+			entityName: Organization
+			schemaName: dbo
+			expressionSource: 'DirectLake - Project_LH'
+

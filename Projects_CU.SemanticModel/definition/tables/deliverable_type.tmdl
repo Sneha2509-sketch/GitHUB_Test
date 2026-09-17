@@ -1,0 +1,29 @@
+table deliverable_type
+	lineageTag: ca3ee982-27b7-4aa1-9cc6-1735625558d0
+	sourceLineageTag: [dbo].[deliverable_type]
+
+	column id
+		dataType: string
+		lineageTag: be642e80-e2c5-4119-be53-146abeb014a5
+		sourceLineageTag: id
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Deliverable Type'
+		dataType: string
+		lineageTag: e18f3caf-b7cf-4c94-90bf-16d11fcd516a
+		sourceLineageTag: Deliverable Type
+		summarizeBy: none
+		sourceColumn: Deliverable Type
+
+		annotation SummarizationSetBy = Automatic
+
+	partition deliverable_type = entity
+		mode: directLake
+		source
+			entityName: deliverable_type
+			schemaName: dbo
+			expressionSource: 'DirectLake - Project_LH'
+

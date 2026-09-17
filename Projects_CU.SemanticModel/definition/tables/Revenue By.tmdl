@@ -1,0 +1,50 @@
+table 'Revenue By'
+	lineageTag: c1790b23-acc3-41d0-9049-12e7d8f3f273
+
+	column 'Revenue By'
+		lineageTag: 1c2df6fc-8862-444a-862d-90ef33506135
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Revenue By Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Revenue By Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Revenue By Fields'
+		isHidden
+		lineageTag: 44a1a0a0-9dff-4468-9610-006c6face853
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Revenue By Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Revenue By Order'
+		isHidden
+		formatString: 0
+		lineageTag: a18c820b-7574-4d72-a2e1-3709df8e15c0
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Revenue By' = calculated
+		mode: import
+		source =
+				{
+				    ("Project Revenue", NAMEOF('Project'[Project Revenue]), 0),
+				    ("Total Invoiced Revenue", NAMEOF('Project'[Total Invoiced Revenue]), 1),
+				    ("Total Non-Invoiced Revenue", NAMEOF('Project'[Total Non-Invoiced Revenue]), 2),
+				    ("Total Unallocated Revenue", NAMEOF('Project'[Total Unallocated Revenue]), 3)
+				}
+
+	annotation PBI_Id = 6ec5e67549ff40d882631fd396d31227
+

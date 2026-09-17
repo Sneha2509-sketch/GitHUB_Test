@@ -1,0 +1,613 @@
+table Project
+	lineageTag: 9406ec64-21d6-4e07-980d-6fb44f180d70
+	sourceLineageTag: [dbo].[Project]
+
+	measure 'Total Projects' =
+			
+			COUNTROWS('Project')
+		formatString: 0
+		lineageTag: 030d8157-d03c-4af2-b24a-0b8d7d2946f0
+
+		changedProperty = Name
+
+	measure 'Project NonInvoicedRevenue' =
+			
+			VAR revenue_USD =
+			    CALCULATE (
+			        SUMX (
+			            Project,
+			            DIVIDE (Project[non_invoiced_revenue] , RELATED ( 'Currency'[exchange_rate] ), 0 )
+			        )
+			    )
+			VAR exchange_rate =
+			    SELECTEDVALUE ( 'destination_currency'[exchange_rate] )
+			RETURN
+			    exchange_rate * revenue_USD
+		lineageTag: 6b440586-2aa3-4032-b875-148bdc0a6a0e
+
+		formatStringDefinition = [Destination Format]
+
+		changedProperty = Name
+
+		changedProperty = FormatString
+
+		changedProperty = FormatStringDefinition
+
+	measure 'Project Revenue' =
+			
+			VAR revenue_USD =
+			    CALCULATE (
+			        SUMX (
+			            Project,
+			            DIVIDE (Project[amount_revenue] , RELATED ( 'Currency'[exchange_rate] ), 0 )
+			        )
+			    )
+			VAR exchange_rate =
+			    SELECTEDVALUE ( 'destination_currency'[exchange_rate] )
+			RETURN
+			    exchange_rate * revenue_USD
+		lineageTag: b7b4c8b1-d055-4498-a4d9-13ecfe763065
+
+		formatStringDefinition = [Destination Format]
+
+		changedProperty = Name
+
+		changedProperty = FormatString
+
+		changedProperty = FormatStringDefinition
+
+	measure Revenue_30Days = ```
+			
+			VAR SelectedExchangeRate = SELECTEDVALUE('destination_currency'[exchange_rate], 1)
+			RETURN
+			    CALCULATE(
+			        SUMX(
+			            'project',
+			            DIVIDE('project'[amount_revenue], RELATED('Currency'[exchange_rate]), 0)
+			        ) * SelectedExchangeRate,
+			        FILTER(
+			            'project',
+			            DATEDIFF(TODAY(), 'project'[date_promised_complete], DAY) <= 30
+			                && DATEDIFF(TODAY(), 'project'[date_promised_complete], DAY) >= 0
+			        )
+			    )
+			
+			```
+		lineageTag: f7a6fc6d-82fe-4b20-8388-2223c66d920c
+
+		formatStringDefinition = [Destination Format]
+
+		changedProperty = Name
+
+		changedProperty = FormatString
+
+		changedProperty = FormatStringDefinition
+
+	measure Revenue_60Days =
+			
+			VAR SelectedExchangeRate = SELECTEDVALUE('destination_currency'[exchange_rate], 1)
+			RETURN
+			    CALCULATE(
+			        SUMX(
+			            'project',
+			            DIVIDE('project'[amount_revenue], RELATED('Currency'[exchange_rate]), 0)
+			        ) * SelectedExchangeRate,
+			        FILTER(
+			            'project',
+			            DATEDIFF(TODAY(), 'project'[date_promised_complete], DAY) <= 60
+			                && DATEDIFF(TODAY(), 'project'[date_promised_complete], DAY) > 30
+			        )
+			    )
+		lineageTag: 5006af02-669f-4668-9f4a-7b8b0108318e
+
+		formatStringDefinition = [Destination Format]
+
+		changedProperty = Name
+
+		changedProperty = FormatString
+
+		changedProperty = FormatStringDefinition
+
+	measure Revenue_90Days =
+			
+			VAR SelectedExchangeRate = SELECTEDVALUE('destination_currency'[exchange_rate], 1)
+			RETURN
+			    CALCULATE(
+			        SUMX(
+			            'project',
+			            DIVIDE('project'[amount_revenue], RELATED('Currency'[exchange_rate]), 0)
+			        ) * SelectedExchangeRate,
+			        FILTER(
+			            'project',
+			            DATEDIFF(TODAY(), 'project'[date_promised_complete], DAY) <= 90
+			                && DATEDIFF(TODAY(), 'project'[date_promised_complete], DAY) > 60
+			        )
+			    )
+		lineageTag: f50ec66a-5803-4e55-b62e-f6338fa6031e
+
+		formatStringDefinition = [Destination Format]
+
+		changedProperty = Name
+
+		changedProperty = FormatString
+
+		changedProperty = FormatStringDefinition
+
+	measure 'Running Total of Project Revenue' =
+			
+			VAR MaxDate = MAX('project'[date_promised_complete])
+			RETURN
+			SUMX(
+			    FILTER(
+			        ALLSELECTED('project'),
+			        'project'[date_promised_complete] <= MaxDate
+			    ),
+			    DIVIDE(
+			        'project'[amount_revenue],
+			        RELATED('Currency'[exchange_rate]),
+			        0
+			    )
+			) * SELECTEDVALUE('destination_currency'[exchange_rate])
+		lineageTag: 840b7989-47aa-4f26-a9f6-6e4d5e129a50
+
+		formatStringDefinition = [Destination Format]
+
+		changedProperty = Name
+
+		changedProperty = FormatString
+
+		changedProperty = FormatStringDefinition
+
+	measure 'Total Invoiced Revenue' =
+			
+			VAR invoiced_USD =
+			    CALCULATE(
+			        SUMX(
+			            'project',
+			            DIVIDE('project'[invoiced_revenue], RELATED('Currency'[exchange_rate]), 0)
+			        ),
+			        'project'[invoiced_revenue] > 0
+			    )
+			VAR destination_rate = SELECTEDVALUE('destination_currency'[exchange_rate], 1)
+			RETURN
+			    invoiced_USD * destination_rate
+		lineageTag: dfdb8d36-1f59-4813-8a63-c59269bc1aad
+
+		formatStringDefinition = [Destination Format]
+
+		changedProperty = Name
+
+		changedProperty = FormatString
+
+		changedProperty = FormatStringDefinition
+
+	measure 'Total Non-Invoiced Revenue' =
+			
+			VAR noninvoiced_USD =
+			    CALCULATE(
+			        SUMX(
+			            'Project',
+			            DIVIDE('project'[non_invoiced_revenue], RELATED('Currency'[exchange_rate]), 0)
+			        ),
+			        'project'[non_invoiced_revenue] > 0
+			    )
+			VAR destination_rate = SELECTEDVALUE('destination_currency'[exchange_rate], 1)
+			RETURN
+			    noninvoiced_USD * destination_rate
+		lineageTag: 63c3b2dd-c80e-4381-a6a5-b92229ee3e5f
+
+		formatStringDefinition = [Destination Format]
+
+		changedProperty = Name
+
+		changedProperty = FormatString
+
+		changedProperty = FormatStringDefinition
+
+	measure 'Total Unallocated Revenue' =
+			
+			VAR unallocated_USD =
+			    CALCULATE(
+			        SUMX(
+			            'project',
+			            DIVIDE('project'[unallocated_revenue], RELATED('Currency'[exchange_rate]), 0)
+			        ),
+			        'project'[unallocated_revenue] > 0
+			    )
+			VAR destination_rate = SELECTEDVALUE('destination_currency'[exchange_rate], 1)
+			RETURN
+			    unallocated_USD * destination_rate
+		lineageTag: 80fd2c14-4824-4624-8186-af1948efd0d2
+
+		formatStringDefinition = [Destination Format]
+
+		changedProperty = Name
+
+		changedProperty = FormatString
+
+		changedProperty = FormatStringDefinition
+
+	measure 'Projects Using Calendar' = ```
+			
+			COUNTROWS(
+			    RELATEDTABLE(Project)
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 0bd51db9-355a-40ae-a48e-d694051f3944
+
+		changedProperty = Name
+
+	measure 'Min Calendar Date' = MIN(Calendar[Date])
+		formatString: General Date
+		lineageTag: cf3ea559-508a-4e7a-8c6e-395b78665502
+
+		changedProperty = Name
+
+	measure 'Max Calendar Date' = MAX(Calendar[Date])
+		formatString: General Date
+		lineageTag: bb755680-4c7d-4152-8c80-8301c2974fdb
+
+		changedProperty = Name
+
+	measure 'Min Project Date' = MIN(Project[date_created])
+		formatString: General Date
+		lineageTag: 18a66ce3-5316-46d3-958e-2fb84d1975b5
+
+		changedProperty = Name
+
+	measure 'Max Project Date' = Max(Project[date_created])
+		formatString: General Date
+		lineageTag: 77a409ad-8e6f-4613-86a2-08d5a15774b6
+
+		changedProperty = Name
+
+	measure 'Revenue Converted' =
+			
+			VAR SelectedCurrency =
+			    SELECTEDVALUE(destination_currency[currency_iso_code], "USD")
+			
+			RETURN
+			    SUM(Project[amount_revenue]) *
+			    SELECTEDVALUE(destination_currency[exchange_rate], 1)
+		lineageTag: fd7c5543-8146-4e19-8208-4d5a99d31e6c
+
+		formatStringDefinition = [Destination Format]
+
+		changedProperty = Name
+
+		changedProperty = FormatString
+
+		changedProperty = FormatStringDefinition
+
+	measure 'Running Sum Revenue' =
+			
+			CALCULATE(
+			    [Project Revenue],
+			    FILTER(
+			        ALLSELECTED('Project'[date_promised_complete]),
+			        'Project'[date_promised_complete] <= MAX('Project'[date_promised_complete])
+			    )
+			)
+		lineageTag: 5c2edd7c-09b8-4154-8211-018feb253c28
+
+		formatStringDefinition = [Destination Format]
+
+		changedProperty = Name
+
+		changedProperty = FormatString
+
+		changedProperty = FormatStringDefinition
+
+	column id
+		dataType: string
+		lineageTag: 2975079d-7701-4fdc-ba69-383ad399f802
+		sourceLineageTag: id
+		summarizeBy: none
+		sourceColumn: id
+
+		annotation SummarizationSetBy = Automatic
+
+	column project_number
+		dataType: string
+		lineageTag: c6d3cc07-0fa5-43bd-82bc-85ddff32fe3c
+		sourceLineageTag: project_number
+		summarizeBy: none
+		sourceColumn: project_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column name_text
+		dataType: string
+		lineageTag: 33dba1f3-989b-440f-bfd4-1a33771251b5
+		sourceLineageTag: name_text
+		summarizeBy: none
+		sourceColumn: name_text
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_id
+		dataType: string
+		lineageTag: a5f3f68e-9fb9-4c41-904a-e3050794493d
+		sourceLineageTag: customer_id
+		summarizeBy: none
+		sourceColumn: customer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_display_name
+		dataType: string
+		lineageTag: 7897e465-29b1-46aa-8bc6-9ff2009988d6
+		sourceLineageTag: customer_display_name
+		summarizeBy: none
+		sourceColumn: customer_display_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column reference_source
+		dataType: string
+		lineageTag: 26496aa0-4f87-4350-aa9f-29a38be0d8e5
+		sourceLineageTag: reference_source
+		summarizeBy: none
+		sourceColumn: reference_source
+
+		annotation SummarizationSetBy = Automatic
+
+	column organization_id
+		dataType: string
+		lineageTag: 32fa8b22-9cb1-42f7-bb14-36789956cd3a
+		sourceLineageTag: organization_id
+		summarizeBy: none
+		sourceColumn: organization_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column amount_revenue
+		dataType: double
+		lineageTag: 2dc3b9b8-b1e5-4311-b4cc-514a5d8391c8
+		sourceLineageTag: amount_revenue
+		summarizeBy: sum
+		sourceColumn: amount_revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column project_type_id
+		dataType: string
+		lineageTag: 75c96fb2-9106-4b8a-9890-eb97d4679666
+		sourceLineageTag: project_type_id
+		summarizeBy: none
+		sourceColumn: project_type_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_number
+		dataType: string
+		lineageTag: 0406ad27-d2ff-447b-8895-fc1a7f2f15c7
+		sourceLineageTag: order_number
+		summarizeBy: none
+		sourceColumn: order_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column deliverable_customer_id
+		dataType: string
+		lineageTag: 43304c5a-e30f-4293-a5c6-06eae2d4a311
+		sourceLineageTag: deliverable_customer_id
+		summarizeBy: none
+		sourceColumn: deliverable_customer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column deliverable_customer_display_name
+		dataType: string
+		lineageTag: d3cca3a6-0026-4598-8080-7b3b7d2b4971
+		sourceLineageTag: deliverable_customer_display_name
+		summarizeBy: none
+		sourceColumn: deliverable_customer_display_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column product
+		dataType: string
+		lineageTag: b64b7855-78f0-409a-93dc-30f5f8c2ba7a
+		sourceLineageTag: product
+		summarizeBy: none
+		sourceColumn: product
+
+		annotation SummarizationSetBy = Automatic
+
+	column state
+		dataType: string
+		lineageTag: 7a0c253c-6c59-4020-8162-91654439861c
+		sourceLineageTag: state
+		summarizeBy: none
+		sourceColumn: state
+
+		annotation SummarizationSetBy = Automatic
+
+	column date_project_starts
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 7de4b6ad-a427-4ebe-9144-9b966f1fa9bc
+		sourceLineageTag: date_project_starts
+		summarizeBy: none
+		sourceColumn: date_project_starts
+
+		annotation SummarizationSetBy = Automatic
+
+	column date_project_ends
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 01f72c93-a623-406c-87ab-0431e215f311
+		sourceLineageTag: date_project_ends
+		summarizeBy: none
+		sourceColumn: date_project_ends
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column date_created
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: ca2ab28b-e648-4b1b-8bb1-5e5dec8e9387
+		sourceLineageTag: date_created
+		summarizeBy: none
+		sourceColumn: date_created
+
+		changedProperty = DataType
+
+		changedProperty = FormatString
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column date_promised_complete
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 10e89bae-4af9-4ef1-a26b-9d1c278595fc
+		sourceLineageTag: date_promised_complete
+		summarizeBy: none
+		sourceColumn: date_promised_complete
+
+		changedProperty = DataType
+
+		changedProperty = FormatString
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Age =
+			
+			DATEDIFF(TODAY(),'project'[date_promised_complete],DAY)
+		formatString: 0
+		lineageTag: cc98f0d9-da9b-4350-874f-69d1a1c23fd2
+		summarizeBy: sum
+		expressionContext: userContext
+
+		changedProperty = Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Aging Group' =
+			
+			SWITCH(TRUE(),
+			project[Age] >=0 && project[Age] <=30,30,
+			project[Age] >30 && project[Age] <=60,60,
+			project[Age] >60 && project[Age] <=90,90,
+			BLANK()
+			)
+		formatString: 0
+		lineageTag: 7892b190-bc3c-407f-8fca-edcc2d1fb71e
+		summarizeBy: sum
+		expressionContext: userContext
+
+		changedProperty = Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column allocated_revenue
+		dataType: double
+		lineageTag: da86e8dd-9980-4a9f-bd76-f668ef0b059a
+		sourceLineageTag: allocated_revenue
+		summarizeBy: sum
+		sourceColumn: allocated_revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column unallocated_revenue
+		dataType: double
+		lineageTag: 86e5d68f-1852-46fd-a5ec-294175fd2cb6
+		sourceLineageTag: unallocated_revenue
+		summarizeBy: sum
+		sourceColumn: unallocated_revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column actual_revenue
+		dataType: double
+		lineageTag: c06b4214-8aec-42dc-9910-4b601e1a58d9
+		sourceLineageTag: actual_revenue
+		summarizeBy: sum
+		sourceColumn: actual_revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column invoiced_revenue
+		dataType: double
+		lineageTag: 793e1c41-39c0-4479-b126-bd4d160a73a2
+		sourceLineageTag: invoiced_revenue
+		summarizeBy: sum
+		sourceColumn: invoiced_revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column non_invoiced_revenue
+		dataType: double
+		lineageTag: 3881c9f8-cc4e-4312-96d1-43f4bb7b5850
+		sourceLineageTag: non_invoiced_revenue
+		summarizeBy: sum
+		sourceColumn: non_invoiced_revenue
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column currency_iso_code
+		dataType: string
+		lineageTag: 09a3f8cb-2fb8-4092-b81d-29d1427ab297
+		sourceLineageTag: currency_iso_code
+		summarizeBy: none
+		sourceColumn: currency_iso_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_code
+		dataType: string
+		lineageTag: 1fe191ee-8535-46a1-9f71-c513e47336e6
+		sourceLineageTag: customer_code
+		summarizeBy: none
+		sourceColumn: customer_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column model_number
+		dataType: string
+		lineageTag: d05930d4-3b2e-498e-98a1-74c7fc3b7c62
+		sourceLineageTag: model_number
+		summarizeBy: none
+		sourceColumn: model_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column models
+		dataType: string
+		lineageTag: b098b7c1-6b4d-49a3-8891-74683fd873eb
+		sourceLineageTag: models
+		summarizeBy: none
+		sourceColumn: models
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Project = entity
+		mode: directLake
+		source
+			entityName: Project
+			schemaName: dbo
+			expressionSource: 'DirectLake - Project_LH'
+
