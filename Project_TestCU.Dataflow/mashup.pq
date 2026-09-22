@@ -20,16 +20,16 @@ in
   #"Removed columns";
 shared Project_DataDestination = let
   Pattern = Lakehouse.Contents([CreateNavigationProperties = false, EnableFolding = false, HierarchicalNavigation = true, EnableVorder = true, OutputMetadataRefresh = true]),
-  Navigation_1 = Pattern{[workspaceId = "a1f79207-1559-49f0-bb03-4326733115c7"]}[Data],
-  Navigation_2 = Navigation_1{[lakehouseId = "e4bd65c0-ff08-4d7a-a72a-48e22317459e"]}[Data],
+  Navigation_1 = Pattern{[workspaceId = "c1ee17ca-231f-4966-b6ea-e2487379bec8"]}[Data],
+  Navigation_2 = Navigation_1{[lakehouseId = "3af690ca-b4af-481c-9f3c-e316a9e4cb67"]}[Data],
   Navigation_3 = Navigation_2{[Id = "dbo", ItemKind = "Schema"]}[Data],
   TableNavigation = Navigation_3{[Id = "Project", ItemKind = "Table"]}?[Data]?
 in
   TableNavigation;
 shared Project_type_DataDestination = let
   Pattern = Lakehouse.Contents([CreateNavigationProperties = false, EnableFolding = false, HierarchicalNavigation = true, EnableVorder = true, OutputMetadataRefresh = true]),
-  Navigation_1 = Pattern{[workspaceId = "a1f79207-1559-49f0-bb03-4326733115c7"]}[Data],
-  Navigation_2 = Navigation_1{[lakehouseId = "e4bd65c0-ff08-4d7a-a72a-48e22317459e"]}[Data],
+  Navigation_1 = Pattern{[workspaceId = "c1ee17ca-231f-4966-b6ea-e2487379bec8"]}[Data],
+  Navigation_2 = Navigation_1{[lakehouseId = "3af690ca-b4af-481c-9f3c-e316a9e4cb67"]}[Data],
   Navigation_3 = Navigation_2{[Id = "dbo", ItemKind = "Schema"]}[Data],
   TableNavigation = Navigation_3{[Id = "Project_type", ItemKind = "Table"]}?[Data]?
 in
@@ -41,8 +41,8 @@ in
   Source;
 shared Currency_DataDestination = let
   Pattern = Lakehouse.Contents([CreateNavigationProperties = false, EnableFolding = false, HierarchicalNavigation = true, EnableVorder = true, OutputMetadataRefresh = true]),
-  Navigation_1 = Pattern{[workspaceId = "a1f79207-1559-49f0-bb03-4326733115c7"]}[Data],
-  Navigation_2 = Navigation_1{[lakehouseId = "e4bd65c0-ff08-4d7a-a72a-48e22317459e"]}[Data],
+  Navigation_1 = Pattern{[workspaceId = "c1ee17ca-231f-4966-b6ea-e2487379bec8"]}[Data],
+  Navigation_2 = Navigation_1{[lakehouseId = "3af690ca-b4af-481c-9f3c-e316a9e4cb67"]}[Data],
   Navigation_3 = Navigation_2{[Id = "dbo", ItemKind = "Schema"]}[Data],
   TableNavigation = Navigation_3{[Id = "Currency", ItemKind = "Table"]}?[Data]?
 in
@@ -56,8 +56,8 @@ in
   #"Renamed columns";
 shared Site_DataDestination = let
   Pattern = Lakehouse.Contents([CreateNavigationProperties = false, EnableFolding = false, HierarchicalNavigation = true, EnableVorder = true, OutputMetadataRefresh = true]),
-  Navigation_1 = Pattern{[workspaceId = "a1f79207-1559-49f0-bb03-4326733115c7"]}[Data],
-  Navigation_2 = Navigation_1{[lakehouseId = "e4bd65c0-ff08-4d7a-a72a-48e22317459e"]}[Data],
+  Navigation_1 = Pattern{[workspaceId = "c1ee17ca-231f-4966-b6ea-e2487379bec8"]}[Data],
+  Navigation_2 = Navigation_1{[lakehouseId = "3af690ca-b4af-481c-9f3c-e316a9e4cb67"]}[Data],
   Navigation_3 = Navigation_2{[Id = "dbo", ItemKind = "Schema"]}[Data],
   TableNavigation = Navigation_3{[Id = "Site", ItemKind = "Table"]}?[Data]?
 in
@@ -71,8 +71,8 @@ in
   #"Renamed columns";
 shared Organization_DataDestination = let
   Pattern = Lakehouse.Contents([CreateNavigationProperties = false, EnableFolding = false, HierarchicalNavigation = true, EnableVorder = true, OutputMetadataRefresh = true]),
-  Navigation_1 = Pattern{[workspaceId = "a1f79207-1559-49f0-bb03-4326733115c7"]}[Data],
-  Navigation_2 = Navigation_1{[lakehouseId = "e4bd65c0-ff08-4d7a-a72a-48e22317459e"]}[Data],
+  Navigation_1 = Pattern{[workspaceId = "c1ee17ca-231f-4966-b6ea-e2487379bec8"]}[Data],
+  Navigation_2 = Navigation_1{[lakehouseId = "3af690ca-b4af-481c-9f3c-e316a9e4cb67"]}[Data],
   Navigation_3 = Navigation_2{[Id = "dbo", ItemKind = "Schema"]}[Data],
   TableNavigation = Navigation_3{[Id = "Organization", ItemKind = "Table"]}?[Data]?
 in
@@ -86,8 +86,8 @@ in
   #"Removed columns";
 shared Customer_DataDestination = let
   Pattern = Lakehouse.Contents([CreateNavigationProperties = false, EnableFolding = false, HierarchicalNavigation = true, EnableVorder = true, OutputMetadataRefresh = true]),
-  Navigation_1 = Pattern{[workspaceId = "a1f79207-1559-49f0-bb03-4326733115c7"]}[Data],
-  Navigation_2 = Navigation_1{[lakehouseId = "e4bd65c0-ff08-4d7a-a72a-48e22317459e"]}[Data],
+  Navigation_1 = Pattern{[workspaceId = "c1ee17ca-231f-4966-b6ea-e2487379bec8"]}[Data],
+  Navigation_2 = Navigation_1{[lakehouseId = "3af690ca-b4af-481c-9f3c-e316a9e4cb67"]}[Data],
   Navigation_3 = Navigation_2{[Id = "dbo", ItemKind = "Schema"]}[Data],
   TableNavigation = Navigation_3{[Id = "Customer", ItemKind = "Table"]}?[Data]?
 in
@@ -102,8 +102,8 @@ in
   #"Renamed columns";
 shared deliverable_type_DataDestination = let
   Pattern = Lakehouse.Contents([CreateNavigationProperties = false, EnableFolding = false, HierarchicalNavigation = true, EnableVorder = true, OutputMetadataRefresh = true]),
-  Navigation_1 = Pattern{[workspaceId = "a1f79207-1559-49f0-bb03-4326733115c7"]}[Data],
-  Navigation_2 = Navigation_1{[lakehouseId = "e4bd65c0-ff08-4d7a-a72a-48e22317459e"]}[Data],
+  Navigation_1 = Pattern{[workspaceId = "c1ee17ca-231f-4966-b6ea-e2487379bec8"]}[Data],
+  Navigation_2 = Navigation_1{[lakehouseId = "3af690ca-b4af-481c-9f3c-e316a9e4cb67"]}[Data],
   Navigation_3 = Navigation_2{[Id = "dbo", ItemKind = "Schema"]}[Data],
   TableNavigation = Navigation_3{[Id = "deliverable_type", ItemKind = "Table"]}?[Data]?
 in
@@ -118,8 +118,8 @@ in
   #"Removed duplicates";
 shared project_requested_deliverable_DataDestination = let
   Pattern = Lakehouse.Contents([CreateNavigationProperties = false, EnableFolding = false, HierarchicalNavigation = true, EnableVorder = true, OutputMetadataRefresh = true]),
-  Navigation_1 = Pattern{[workspaceId = "a1f79207-1559-49f0-bb03-4326733115c7"]}[Data],
-  Navigation_2 = Navigation_1{[lakehouseId = "e4bd65c0-ff08-4d7a-a72a-48e22317459e"]}[Data],
+  Navigation_1 = Pattern{[workspaceId = "c1ee17ca-231f-4966-b6ea-e2487379bec8"]}[Data],
+  Navigation_2 = Navigation_1{[lakehouseId = "3af690ca-b4af-481c-9f3c-e316a9e4cb67"]}[Data],
   Navigation_3 = Navigation_2{[Id = "dbo", ItemKind = "Schema"]}[Data],
   TableNavigation = Navigation_3{[Id = "project_requested_deliverable", ItemKind = "Table"]}?[Data]?
 in
@@ -192,8 +192,8 @@ in
     #"Added Day";
 shared Calendar_DataDestination = let
   Pattern = Lakehouse.Contents([CreateNavigationProperties = false, EnableFolding = false, HierarchicalNavigation = true, EnableVorder = true, OutputMetadataRefresh = true]),
-  Navigation_1 = Pattern{[workspaceId = "a1f79207-1559-49f0-bb03-4326733115c7"]}[Data],
-  Navigation_2 = Navigation_1{[lakehouseId = "e4bd65c0-ff08-4d7a-a72a-48e22317459e"]}[Data],
+  Navigation_1 = Pattern{[workspaceId = "c1ee17ca-231f-4966-b6ea-e2487379bec8"]}[Data],
+  Navigation_2 = Navigation_1{[lakehouseId = "3af690ca-b4af-481c-9f3c-e316a9e4cb67"]}[Data],
   Navigation_3 = Navigation_2{[Id = "dbo", ItemKind = "Schema"]}[Data],
   TableNavigation = Navigation_3{[Id = "Calendar", ItemKind = "Table"]}?[Data]?
 in
